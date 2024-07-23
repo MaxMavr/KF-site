@@ -1,34 +1,46 @@
 
 
 
-.button{
-  border-radius: 1.5vh;
-  height: 100%;
-  min-height: 30px;
-  aspect-ratio: 1;
+.button {
+  border-radius: 12px;
+  padding: 12px 24px;
   transition: all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  --shadow-color: rgba(255, 255, 255, .3);
-  --inset-color: rgba(255, 255, 255, .3);
+  height: 26px;
 
   text-decoration: none;
   font-family: Noah, Arial, sans-serif;
   color: #231f20;
   font-weight: bolder;
 	font-style: normal;
-  font-size: 2vh;
+  font-size: 18pt;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
+  --shadow-color: rgba(255, 255, 255, .1);
+  --inset-color: rgba(255, 255, 255, .1);
   user-select: none;
 }
 
-.button.download{
-  --inset-color: rgba(0, 0, 0, .3);
+.button.white{
+  color: #231f20;
   background: #fff;
-  aspect-ratio: 3;
+  --inset-color: rgba(35, 31, 32, .1);
 }
+
+.button.black{
+  color: #fff;
+  background: #231f20;
+  --inset-color: rgba(255, 255, 255, .1);
+}
+
+.button:empty {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+}
+
 .button.tg{
   --shadow-color: rgba(40, 168, 232, .3);
   background-image: url(../img/icons/tg-logo.svg);
@@ -54,17 +66,21 @@
   background-image: url(../img/icons/myskotom-logo.svg);
 }
 
-.button-container{
-  height: 100%;
-  height: max(5vh, 30px);
-  display: flex;
-  grid-gap: 10px;
-  align-items: center;
-  z-index: 99999;
+footer .button.tg{
+  background-image: url(../img/icons/tg-logo-footer.svg);
+}
+footer .button.vk{
+  background-image: url(../img/icons/vk-logo-footer.svg);
+}
+footer .button.yt{
+  background-image: url(../img/icons/yt-logo-footer.svg);
 }
 
-.button-container.title-buttons{
-  margin-top: 40px; margin-left: auto;
+.button-container{
+  display: flex;
+  grid-gap: 12px;
+  align-items: center;
+  z-index: 100;
 }
 
 .button:hover{

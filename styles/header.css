@@ -61,33 +61,22 @@ header {
 
 .scroll-arrow{
 	position: absolute;
-  left: 50%;
+	left: 50%;
 	bottom: 20px;
 	filter: invert(95%) sepia(0%) saturate(7487%) hue-rotate(97deg) brightness(108%) contrast(98%);
 	height: 6vh;
 	animation: hoppende 1.5s forwards alternate infinite cubic-bezier(0.6, 0, 0.4, 1);
 }
 
-.narrow .scroll-arrow{
+.narrow.scroll-arrow{
 	animation: scroll-quit 1.5s forwards alternate cubic-bezier(0.6, 0, 0.4, 1);
-}
-
-@keyframes hoppende {
-	0% {
-		transform: translate(-50%, -150%);
-    opacity: 100%;
-  }
-  100% {
-		transform: translate(-50%, -100%);
-    opacity: 60%;
-  }
 }
 
 @keyframes scroll-quit {
 	0% {
 		transform: translate(-50%, -125%);
     opacity: 80%;
-  }
+	}
   100% {
 		transform: translate(-50%, -125%);
     opacity: 0%;
@@ -95,6 +84,16 @@ header {
   }
 }
 
+@keyframes hoppende {
+	0%{
+		transform:translate(-50%,-150%);
+		opacity:100%;
+	}
+	100%{
+		transform:translate(-50%, -100%);
+		opacity: 60%;
+	}
+}
 
 
 

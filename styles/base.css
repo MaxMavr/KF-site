@@ -18,6 +18,17 @@ body{
   min-height: 100vh;
 }
 
+.main-cont{
+  width: 60%;
+  max-width: 1920px;
+}
+
+@media (max-width:800px) {
+  .main-cont {
+    width: 80%;
+  }
+}
+
 #main-title, p {
   height: auto;
   width: 60%;
