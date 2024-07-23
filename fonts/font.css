@@ -1,0 +1,39 @@
+@font-face {
+  font-family: Noah;
+  font-weight: normal;
+  src: url(Noah-Regular.ttf);
+}
+
+@font-face {
+    font-family: Noah;
+    font-weight: bold;
+    src: url(Noah-Bold.ttf);
+}
+
+@font-face {
+    font-family: Noah;
+    font-style: italic;
+    src: url(Noah-Italic.ttf);
+}
+
+@font-face {
+    font-family: Noah;
+    font-weight: bold;
+    font-style: italic;
+    src: url(Noah-Bold-Italic.ttf);
+}
+
+@font-face {
+    font-family: Morfin;
+    src: url(MorfinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Melectron;
+    src: url(Melectron-Regular.otf);
+}
+
+@font-face {
+    font-family: Nuqun;
+    src: url(Nuqun-Regular.otf);
+}

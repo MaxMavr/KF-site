@@ -1,0 +1,78 @@
+
+
+
+.button{
+  border-radius: 1.5vh;
+  height: 100%;
+  min-height: 30px;
+  aspect-ratio: 1;
+  transition: all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  --shadow-color: rgba(255, 255, 255, .3);
+  --inset-color: rgba(255, 255, 255, .3);
+
+  text-decoration: none;
+  font-family: Noah, Arial, sans-serif;
+  color: #231f20;
+  font-weight: bolder;
+	font-style: normal;
+  font-size: 2vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  user-select: none;
+}
+
+.button.download{
+  --inset-color: rgba(0, 0, 0, .3);
+  background: #fff;
+  aspect-ratio: 3;
+}
+.button.tg{
+  --shadow-color: rgba(40, 168, 232, .3);
+  background-image: url(../img/icons/tg-logo.svg);
+}
+.button.vk{
+  --shadow-color: rgba(0, 119, 255, .3);
+  background-image: url(../img/icons/vk-logo.svg);
+}
+.button.yt{
+  --shadow-color: rgba(255, 0, 0, .3);
+  background-image: url(../img/icons/yt-logo.svg);
+}
+.button.fontesk{
+  --shadow-color: rgba(1, 148, 255, .3);
+  background-image: url(../img/icons/fontesk-logo.svg);
+}
+.button.fontstorage{
+  --shadow-color: rgba(3, 125, 202, .3);
+  background-image: url(../img/icons/fontstorage-logo.svg);
+}
+.button.myskotom{
+  --inset-color: rgba(0, 0, 0, .3);
+  background-image: url(../img/icons/myskotom-logo.svg);
+}
+
+.button-container{
+  height: 100%;
+  height: max(5vh, 30px);
+  display: flex;
+  grid-gap: 10px;
+  align-items: center;
+  z-index: 99999;
+}
+
+.button-container.title-buttons{
+  margin-top: 40px; margin-left: auto;
+}
+
+.button:hover{
+  transform: translateY(-5px);
+  box-shadow: inset 0px 0px 15px 5px var(--inset-color), 0px 10px 15px -5px var(--shadow-color);
+}
+
+.button:active {
+  transition: all .1s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transform: translateY(0);
+}

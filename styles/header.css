@@ -1,0 +1,136 @@
+@import url('logo-cube.css');
+
+
+header,
+.header-plug {
+	max-width: 100vw;
+	height: 100vh;
+	padding: 20px 0;
+}
+
+header,
+.header-plug,
+.scroll-arrow {
+	transition: all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+}
+
+.logo-header,
+.header-container {
+	transition: all .6s cubic-bezier(0.75, 0.35, 0.4, 0.99); /* allow-discrete */
+}
+
+.header-container button {
+	transition: all .6s cubic-bezier(0.75, 0.35, 0.4, 0.99) allow-discrete; /* allow-discrete */
+}
+
+header {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	inset: 0;
+	background: #231f20;
+	z-index: 10000;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	width: 60%;
+	height: 100%;
+}
+
+.logo-header {
+	display: flex;
+	aspect-ratio: calc(66.968 / 20) ;
+	flex: 1 0 auto;
+}
+
+.narrow {
+	height: 5vh;
+}
+
+.narrow .header-container {
+	width: 80%;
+}
+
+.narrow .logo-header {
+	max-height: 100%;
+}
+
+.scroll-arrow{
+	position: absolute;
+  left: 50%;
+	bottom: 20px;
+	filter: invert(95%) sepia(0%) saturate(7487%) hue-rotate(97deg) brightness(108%) contrast(98%);
+	height: 6vh;
+	animation: hoppende 1.5s forwards alternate infinite cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+.narrow .scroll-arrow{
+	animation: scroll-quit 1.5s forwards alternate cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+@keyframes hoppende {
+	0% {
+		transform: translate(-50%, -150%);
+    opacity: 100%;
+  }
+  100% {
+		transform: translate(-50%, -100%);
+    opacity: 60%;
+  }
+}
+
+@keyframes scroll-quit {
+	0% {
+		transform: translate(-50%, -125%);
+    opacity: 80%;
+  }
+  100% {
+		transform: translate(-50%, -125%);
+    opacity: 0%;
+		display: none;
+  }
+}
+
+
+
+
+
+.header-container button {
+	color: #fff;
+	display: none;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2vh;
+	text-decoration: 1px var(--main-bg-color);
+}
+
+.narrow .header-container button {
+	display: block;
+	position: relative;
+	opacity: 60%;
+}
+
+.narrow .header-container button:hover {
+	opacity: 100%;
+}
+
+.narrow .header-container button::after {
+	--main-ul-color: #fff;
+	transition: all .2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+	position: absolute;
+  content: '';
+	display: block;
+  width: 0;
+  height: 1px;
+  background: var(--main-bg-color);
+	left: 50%;
+  transform: translate(-50%, -400%);
+}
+
+.narrow .header-container button:hover:after {
+	width: 100%;
+}

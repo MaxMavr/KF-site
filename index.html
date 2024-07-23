@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<!--
+  Оригинальные авторские права
+  принадлежат KFproduction
+  Редакция 2024
+-->
+
+<html lang="ru-RU">
+<head>
+  <meta charset="utf-8">
+  <title>KFproduction</title>
+  <link rel="icon" href="img/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/base.css">
+  <link rel="stylesheet" type="text/css" href="styles/header.css">
+  <link rel="stylesheet" type="text/css" href="styles/grid-case.css">
+	<link rel="stylesheet" type="text/css" href="styles/pop-up.css">
+</head>
+
+<body>
+  <header>
+  	<div class="header-container">
+      <a class="logo-header" href="#">
+        <div class="logo-cube">
+          <div class="cube">
+            <div class="side front"></div>
+            <div class="side left"></div>
+            <div class="side right"></div>
+            <div class="side top"></div>
+            <div class="side buttom"></div>
+          </div>
+        </div>
+        <img src="img/logo/logo-descr.svg" alt="" class="logo-descr"></img>
+      </a>
+      <button class="copy-button">KFproduction@yandex.ru</button>
+  	</div>
+    <a href="#main-title"><img src="img/icons/chevron-down.svg" alt="" class="scroll-arrow"></img></a>
+  </header>
+
+  <div class="header-plug"></div>
+
+  <h1 id="main-title">Портфолио ебать какой студии из одного человека</h1>
+
+  <p>Я настолько крут, что могу в одного пародировать студию хуё-моё дизайна.
+    Так что быстро написал на почту и заказал ахуительный дизайн.
+    <br><strong>&copy; Максим Мавряшин&trade;</strong></p>
+
+  <div class="grid-case">
+
+    <div class="case">
+      <a href="cases/melectron/melectron.html" target="_blank" style="background-image: url(cases/melectron/img/cover.webp);"></a>
+      <section class="caption"><h4>Melectron</h4><span>Шрифт</span></section>
+    </div>
+
+    <div class="case">
+      <a href="cases/morfin/morfin.html" target="_blank" style="background-image: url(cases/morfin/img/cover.webp);"></a>
+      <section class="caption"><h4>Morfin</h4><span>Шрифт</span></section>
+    </div>
+
+    <div class="case">
+      <a href="cases/ПервыйПечатный/ПервыйПечатный.html" target="_blank" style="background-image: url(cases/ПервыйПечатный/img/cover.webp);"></a>
+      <section class="caption"><h4>Первый Печатный</h4><span>Айдентика</span></section>
+    </div>
+
+    <div class="case">
+      <a href="cases/OQUN/OQUN.html" target="_blank" style="background-image: url(cases/OQUN/img/cover.webp);"></a>
+      <section class="caption"><h4>OQUN'</h4><span>Логотип</span></section>
+    </div>
+  </div>
+
+  <p>Работ ещё дофига, но мне лень их оформлять. Нате ссылку на Я.Диск</p>
+
+
+
+
+  <div class="pop-up-container"></div>
+
+  <footer>
+    <a class="logo-footer" href="#"></a>
+    <div class="button-container">
+      <a href="https://vk.com/kfprod" class="button vk"></a>
+      <a href="https://t.me/maxmavr" class="button tg"></a>
+      <a href="https://www.youtube.com/@kfprod" class="button yt"></a>
+    </div>
+  </footer>
+
+  <template id="pop-up-copy-pattern">
+    <div class="pop-up">
+      <div class="pop-up-text">
+        <img src="img/icons/check.svg" alt=""></img>
+        <span>Почта скопирована</span>
+      </div>
+    </div>
+  </template>
+
+  <script src="scripts/header.js"></script>
+  <script src="scripts/logo-cube.js"></script>
+  <script src="scripts/copy.js"></script>
+</body>
+</html>

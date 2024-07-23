@@ -1,0 +1,25 @@
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  background: #231f20;
+
+  max-width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.logo-footer {
+  height: 100%;
+  aspect-ratio: 3.35;
+  opacity: 60%;
+  background: url(../img/logo/logo-bw.svg) no-repeat center center / contain;
+  transition: all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+}
+
+.logo-footer:hover {
+  opacity: 100%;
+  background: url(../img/logo/logo.svg) no-repeat center center / contain;
+}

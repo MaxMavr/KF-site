@@ -1,0 +1,66 @@
+@import url('../fonts/font.css');
+@import url('button.css');
+@import url('footer.css');
+
+
+* {
+    touch-action: manipulation;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: Noah, Arial, sans-serif;
+  color: #231f20;
+  min-height: 100vh;
+}
+
+#main-title, p {
+  height: auto;
+  width: 60%;
+  margin: 40px auto 0 auto;
+}
+
+@media (max-width:800px) {
+  #main-title, p {
+    width: 80%;
+  }
+}
+
+#main-title {
+  font-size: 5vh;
+}
+
+p {
+  font-size: 3vh;
+}
+
+p .fun{
+  opacity: 0;
+  transition: all .2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+}
+
+p:hover {
+  .fun {
+    opacity: 100%;
+  }
+}
+
+.golink {
+
+}
+
+/* Полоса прокрутки */
+body::-webkit-scrollbar {
+  width: 3px;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(35, 31, 32, .3);
+  border-radius: 20px;
+}

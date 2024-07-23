@@ -1,0 +1,73 @@
+#project-title {
+  font-family: Morfin, Arial, sans-serif;
+  color: #dd4625;
+  font-weight: normal;
+  line-height: .497;
+  font-size: min(35vw, 25vh);
+}
+
+body{
+  background: #221823;
+  color: #fff;
+}
+
+.caption {
+  width: 50%;
+  text-align: right;
+  font-size: 2vh;
+  margin: 0 auto;
+  color: #ec9d22;
+}
+
+.font-demonstration {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 40px auto 0 auto;
+
+  align-items: center;
+  justify-content: center;
+
+  mask-image: none;
+}
+
+@media (max-width:800px) {
+  .font-demonstration {
+    width: 80%;
+    padding: 0 10%;
+  }
+
+  .caption {
+    width: 80%;
+  }
+}
+
+.font-demonstration span {
+  font-family: Morfin, Arial, sans-serif;
+  max-height: 100%;
+  max-width: 100%;
+  color: #ece6c6;
+  transition: all .2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  margin: 0 30px;
+
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 10vh;
+  vertical-align: baseline;
+}
+
+.font-demonstration span:hover {
+  transform: scale(1.5);
+}
+
+.font-demonstration.test::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: url('img/back/4.webp') no-repeat center center / cover;
+  mask: radial-gradient(rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 70%);
+}
