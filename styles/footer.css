@@ -21,5 +21,9 @@ footer{
 
 .logo-footer:hover {
   opacity: 100%;
+}
+
+.logo-footer:hover {
+  opacity: 100%;
   background: url(../img/logo/logo.svg) no-repeat center center / contain;
 }
