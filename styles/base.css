@@ -1,17 +1,15 @@
 @import url("../fonts/font.css");
 @import url("button.css");
-@import url("footer.css");
 @import url("hlink.css");
+@import url("footer.css");
 
 * {
   touch-action: manipulation;
 }
-
 html {
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
-
 body {
   color: #231f20;
   font-family: Noah, Arial, sans-serif;
@@ -21,38 +19,32 @@ body {
 main {
   width: 80%;
   max-width: 1920px;
-  margin: 80px auto 0 auto;
+  margin: 80px auto 80px auto;
 }
 
 .major {
   font-weight: bold;
   font-size: 32px;
 }
-
 .minor {
   font-size: 20px;
 }
-
-.major.white,
-.minor.white {
+.white {
   color: #fff;
 }
-
-.major.black,
-.minor.black {
+.black {
   color: #231f20;
 }
 
 .text-container {
   width: 80%;
+  font-size: 32px;
   margin: 0 auto;
 }
-
 .text-container .fun {
   opacity: 0;
   transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
-
 .text-container:hover {
   .fun {
     opacity: 100%;
@@ -60,6 +52,7 @@ main {
 }
 
 #main-title {
+  font-size: 48px;
   width: 60%;
   margin: 0 auto;
 }
@@ -68,17 +61,9 @@ main {
   #main-title {
     width: 80%;
   }
-}
-
-#main-title {
-  font-size: 5vh;
-}
-
-p {
-  font-size: 32px;
-}
-
-.golink {
+  .text-container {
+    width: 100%;
+  }
 }
 
 /* Полоса прокрутки */

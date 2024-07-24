@@ -11,8 +11,6 @@
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 
   text-decoration: none;
-  font-family: Noah, Arial, sans-serif;
-  color: #231f20;
   font-weight: bold;
   font-size: 20px;
 
@@ -67,10 +65,15 @@
   --inset-color: rgba(0, 0, 0, 0.3);
   background-image: url(../img/icons/myskotom-logo.svg);
 }
+.button.mail {
+  background-image: url(../img/icons/mail-fill.svg);
+}
 
-footer .button {
+footer .button,
+.button.mail {
   opacity: 60%;
 }
+
 footer .button.tg {
   background-image: url(../img/icons/tg-logo-footer.svg);
 }

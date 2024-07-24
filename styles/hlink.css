@@ -2,22 +2,26 @@
   --link-color: #5646ff; /* JS */
 }
 
-.hlink{
+.hlink {
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   color: var(--link-color);
   position: relative;
-  text-decoration: 1px;
+  text-decoration: none;
+}
+
+.hlink:hover {
+  opacity: 100% !important;
 }
 
 .hlink::after {
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   position: absolute;
-  content: '';
-	display: block;
+  content: "";
+  display: block;
   width: 0;
   height: 2px;
   background: var(--link-color);
-	left: 50%;
+  left: 50%;
   transform: translate(-50%, -375%);
 }
 
@@ -29,10 +33,6 @@
   transform: translate(-50%, -350%);
 }
 
-.hlink:hover {
-  opacity: 100% !important;
-}
-
 .hlink:hover:after {
-	width: 100%;
+  width: 100%;
 }
