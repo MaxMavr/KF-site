@@ -1,31 +1,24 @@
 
 
-:root {
-  --pop-up-size: 50px;
-}
 
 .pop-up-container {
   position: fixed;
   bottom: 25px;
   left: 50%;
   display: flex;
-
   z-index: 100;
   flex-flow: column;
   align-items: center;
-  /* max-width: 60%; */
   transform: translate(-50%, 0);
 }
 
 .pop-up {
   display: flex;
-  grid-gap: 12px;
-  height: 26px;
-  font-size: 18pt;
-  align-items: center;
   margin-top: 10px;
+  grid-gap: 12px;
+  align-items: center;
   padding: 12px 24px 12px 18px;
-  border-radius: 25px;
+  border-radius: 24px;
   background: #231f20;
 
   opacity: 0;
@@ -35,6 +28,7 @@
 
 .pop-up span {
   color: #fff;
+  font-size: 20px;
   user-select: none;
   font-weight: bold;
   white-space: nowrap;
@@ -55,7 +49,7 @@
     height: 0;
   }
   3% {
-    height: 26px;
+    height: 24px;
   }
   7% {
     transform: translateY(0);
@@ -66,7 +60,7 @@
   }
   100% {
     opacity: 0;
-    height: 26px;
+    height: 24px;
     transform: translateY(0);
   }
 }

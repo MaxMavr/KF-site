@@ -1,6 +1,7 @@
 @import url('../fonts/font.css');
 @import url('button.css');
 @import url('footer.css');
+@import url('hlink.css');
 
 
 * {
@@ -13,18 +14,32 @@ html {
 }
 
 body{
-  font-family: Noah, Arial, sans-serif;
-  color: #231f20;
   min-height: 100vh;
+  color: #231f20;
 }
 
-.main-cont{
-  width: 60%;
+.major{
+  font-family: Noah, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.minor{
+  font-family: Noah, Arial, sans-serif;
+  font-size: 20px;
+}
+
+.text-container{
+  width: 80%;
+}
+
+.main-container{
+  width: 80%;
   max-width: 1920px;
 }
 
 @media (max-width:800px) {
-  .main-cont {
+  .main-container {
     width: 80%;
   }
 }
@@ -46,7 +61,7 @@ body{
 }
 
 p {
-  font-size: 3vh;
+  font-size: 32px;
 }
 
 p .fun{

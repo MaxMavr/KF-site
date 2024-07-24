@@ -5,13 +5,12 @@
   border-radius: 12px;
   padding: 12px 24px;
   transition: all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  height: 26px;
 
   text-decoration: none;
   font-family: Noah, Arial, sans-serif;
   color: #231f20;
   font-weight: bold;
-  font-size: 18pt;
+  font-size: 20px;
 
   display: flex;
   justify-content: center;
@@ -35,8 +34,8 @@
 }
 
 .button:empty {
-  height: 50px;
-  width: 50px;
+  height: 48px;
+  width: 48px;
   padding: 0;
 }
 

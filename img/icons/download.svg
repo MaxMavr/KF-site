@@ -4,11 +4,11 @@
     .s {fill:none;stroke:#000000;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:30;stroke-dashoffset:30;}
     .s1 {animation: stroke-movement .5s cubic-bezier(0.75, 0.35, 0.4, 0.99) forwards;}
     .s2 {animation: stroke-movement .35s cubic-bezier(0.75, 0.35, 0.4, 0.99) .35s forwards;}
-    .s3 {animation: stroke-movement .7s cubic-bezier(0.75, 0.35, 0.4, 0.99) forwards;}
     @keyframes stroke-movement {0%{stroke-dasharray:30;stroke-dashoffset:30;}100%{stroke-dashoffset: 0;}}
   </style>
   <line class="s s1" x1="12" y1="3" x2="12" y2="15"/>
   <line class="s s2" x1="12" y1="15" x2="7" y2="10"/>
   <line class="s s2" x1="12" y1="15" x2="17" y2="10"/>
-  <path class="s s3" d="M21,15v4c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2v-4"/>
+  <line class="s s2" x1="12" y1="21" x2="3" y2="21"/>
+  <line class="s s2" x1="12" y1="21" x2="21" y2="21"/>
 </svg>

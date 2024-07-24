@@ -4,11 +4,6 @@ document.documentElement.style.setProperty('--main-bg-color',
 colorArray[Math.floor(Math.random() * colorArray.length)]);
 
 
-// const button = document.createElement('button');
-// button.textContent = 'KFproduction@yandex.ru';
-// button.className = 'copy-button';
-
-
 var cbpAnimatedHeader = (function() {
 	var docElem = document.documentElement,
 		header = document.querySelector('header'),

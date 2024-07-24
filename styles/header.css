@@ -19,7 +19,7 @@ header,
 	transition: all .6s cubic-bezier(0.75, 0.35, 0.4, 0.99); /* allow-discrete */
 }
 
-.header-container button {
+.header-container .hlink {
 	transition: all .6s cubic-bezier(0.75, 0.35, 0.4, 0.99) allow-discrete; /* allow-discrete */
 }
 
@@ -98,38 +98,26 @@ header {
 
 
 
-.header-container button {
+.header-container .hlink {
 	color: #fff;
 	display: none;
 	font-weight: normal;
 	font-style: normal;
-	font-size: 2vh;
+	font-size: 20px;
 	text-decoration: 1px var(--main-bg-color);
 }
 
-.narrow .header-container button {
+.narrow .header-container .hlink {
 	display: block;
 	position: relative;
 	opacity: 60%;
 }
 
-.narrow .header-container button:hover {
+.narrow .header-container .hlink:hover {
 	opacity: 100%;
 }
 
-.narrow .header-container button::after {
-	--main-ul-color: #fff;
-	transition: all .2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-	position: absolute;
-  content: '';
-	display: block;
-  width: 0;
+.narrow .header-container .hlink::after {
   height: 1px;
-  background: var(--main-bg-color);
-	left: 50%;
-  transform: translate(-50%, -400%);
-}
-
-.narrow .header-container button:hover:after {
-	width: 100%;
+  transform: translate(-50%, -450%);
 }

@@ -1,5 +1,5 @@
 var counter = 0,
-  button = document.querySelector('.copy-button'),
+  button = document.querySelector('.copy-btn'),
   popup_container = document.querySelector('.pop-up-container');
 
 
