@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 334.84 100" style="enable-background:new 0 0 334.84 100;" xml:space="preserve">
-<g style="fill:#231F20;">
-	<rect x="50" width="50" height="25"/>
-	<rect x="50" y="50" width="50" height="50"/>
-	<path d="M50,0c0,27.61-22.39,50-50,50V0H50z"/>
-	<path d="M0,50h50v50C50,72.39,27.61,50,0,50z"/>
+<style type="text/css">.o{fill:#FF6433;}.d{fill:#414271;}.p{fill:#9943E2;}.r{fill:#FF4267;}.g{fill:#1BCEC4;}.b{fill:#5646FF;}.y{fill:#FF9E33;}.t{fill:#231F20;}</style>
+<rect class="o" x="50" y="25" width="50" height="25"/>
+<rect class="d" x="50" width="50" height="25"/>
+<rect class="p" x="50" y="50" width="50" height="50"/>
+<path class="r" d="M50,0v50H0C27.61,50,50,27.61,50,0z"/>
+<path class="g" d="M50,0c0,27.61-22.39,50-50,50V0H50z"/>
+<path class="b" d="M0,50h50v50C50,72.39,27.61,50,0,50z"/>
+<path class="y" d="M0,50c27.61,0,50,22.39,50,50H0V50z"/>
+<g class="t">
 	<path  d="M144.17,37.37v0.15h-5.11l-9.56-11.17v11.17h-4.34V12.52h4.34v11.21l8.97-11.21h4.92v0.11l-9.85,12.28
 		L144.17,37.37z"/>
 	<path d="M147.44,12.52h15.62v4.01h-11.28v7.2h10.11v3.9h-10.11v9.89h-4.34V12.52z"/>

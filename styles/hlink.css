@@ -1,11 +1,16 @@
+:root {
+  --link-color: #5646ff; /* JS */
+}
+
 .hlink{
+  transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   color: var(--link-color);
   position: relative;
   text-decoration: 1px;
 }
 
 .hlink::after {
-  transition: all .2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   position: absolute;
   content: '';
 	display: block;
@@ -13,7 +18,19 @@
   height: 2px;
   background: var(--link-color);
 	left: 50%;
+  transform: translate(-50%, -375%);
+}
+
+.hlink.minor::after {
+  transform: translate(-50%, -200%);
+}
+
+.hlink.major::after {
   transform: translate(-50%, -350%);
+}
+
+.hlink:hover {
+  opacity: 100% !important;
 }
 
 .hlink:hover:after {

@@ -1,33 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#231F20;}
-	.st1{fill:#FF6433;}
-	.st2{fill:#414271;}
-	.st3{fill:#9943E2;}
-	.st4{fill:#FF4267;}
-	.st5{fill:#1BCEC4;}
-	.st6{fill:#5646FF;}
-	.st7{fill:#FF9E33;}
+	.s1{fill:#FF6433;}
+	.s2{fill:#414271;}
+	.s3{fill:#9943E2;}
+	.s4{fill:#FF4267;}
+	.s5{fill:#1BCEC4;}
+	.s6{fill:#5646FF;}
+	.s7{fill:#FF9E33;}
 </style>
-<g>
-	<g>
-		<rect x="8" class="st0" width="8" height="8"/>
-		<rect x="8" class="st1" width="8" height="8"/>
-		<rect x="8" class="st2" width="8" height="4"/>
-	</g>
-	<g>
-		<rect x="8" y="8" class="st3" width="8" height="8"/>
-	</g>
-	<g>
-		<path class="st4" d="M8,0v8H0C4.42,8,8,4.42,8,0z"/>
-		<path class="st5" d="M8,0c0,4.42-3.58,8-8,8V0H8z"/>
-	</g>
-	<g>
-		<path class="st6" d="M0,8h8v8C8,11.58,4.42,8,0,8z"/>
-		<path class="st7" d="M0,8c4.42,0,8,3.58,8,8H0V8z"/>
-	</g>
-</g>
+<rect class="s1" x="8" width="8" height="8"/>
+<rect class="s2" x="8" width="8" height="4"/>
+<rect class="s3" x="8" y="8"  width="8" height="8"/>
+<path class="s4" d="M8,0v8H0C4.42,8,8,4.42,8,0z"/>
+<path class="s5" d="M8,0c0,4.42-3.58,8-8,8V0H8z"/>
+<path class="s6" d="M0,8h8v8C8,11.58,4.42,8,0,8z"/>
+<path class="s7" d="M0,8c4.42,0,8,3.58,8,8H0V8z"/>
 </svg>

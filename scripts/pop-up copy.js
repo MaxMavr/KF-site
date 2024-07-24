@@ -1,9 +1,9 @@
 var counter = 0,
-  button = document.querySelector('.copy-btn'),
+  button = document.querySelector('.copy-button'),
   popup_container = document.querySelector('.pop-up-container');
 
 
-button.onclick = function() {
+button.onmousedown = function() {
   navigator.clipboard.writeText(button.textContent);
 
   var new_popup = document.getElementById('pop-up-copy-pattern').content.cloneNode(true).querySelector('.pop-up');

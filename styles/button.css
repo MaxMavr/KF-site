@@ -1,10 +1,14 @@
-
-
+.button-container {
+  display: flex;
+  grid-gap: 12px;
+  align-items: center;
+  z-index: 100;
+}
 
 .button {
   border-radius: 12px;
   padding: 12px 24px;
-  transition: all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 
   text-decoration: none;
   font-family: Noah, Arial, sans-serif;
@@ -16,21 +20,21 @@
   justify-content: center;
   align-items: center;
 
-  --shadow-color: rgba(255, 255, 255, .3);
-  --inset-color: rgba(255, 255, 255, .3);
+  --shadow-color: rgba(255, 255, 255, 0.3);
+  --inset-color: rgba(255, 255, 255, 0.3);
   user-select: none;
 }
 
-.button.white{
+.button.white {
   color: #231f20;
   background: #fff;
-  --inset-color: rgba(35, 31, 32, .3);
+  --inset-color: rgba(35, 31, 32, 0.3);
 }
 
-.button.black{
+.button.black {
   color: #fff;
   background: #231f20;
-  --inset-color: rgba(255, 255, 255, .3);
+  --inset-color: rgba(255, 255, 255, 0.3);
 }
 
 .button:empty {
@@ -39,54 +43,53 @@
   padding: 0;
 }
 
-.button.tg{
-  --shadow-color: rgba(40, 168, 232, .3);
+.button.tg {
+  --shadow-color: rgba(40, 168, 232, 0.3);
   background-image: url(../img/icons/tg-logo.svg);
 }
-.button.vk{
-  --shadow-color: rgba(0, 119, 255, .3);
+.button.vk {
+  --shadow-color: rgba(0, 119, 255, 0.3);
   background-image: url(../img/icons/vk-logo.svg);
 }
-.button.yt{
-  --shadow-color: rgba(255, 0, 0, .3);
+.button.yt {
+  --shadow-color: rgba(255, 0, 0, 0.3);
   background-image: url(../img/icons/yt-logo.svg);
 }
-.button.fontesk{
-  --shadow-color: rgba(1, 148, 255, .3);
+.button.fontesk {
+  --shadow-color: rgba(1, 148, 255, 0.3);
   background-image: url(../img/icons/fontesk-logo.svg);
 }
-.button.fontstorage{
-  --shadow-color: rgba(3, 125, 202, .3);
+.button.fontstorage {
+  --shadow-color: rgba(3, 125, 202, 0.3);
   background-image: url(../img/icons/fontstorage-logo.svg);
 }
-.button.myskotom{
-  --inset-color: rgba(0, 0, 0, .3);
+.button.myskotom {
+  --inset-color: rgba(0, 0, 0, 0.3);
   background-image: url(../img/icons/myskotom-logo.svg);
 }
 
-footer .button.tg{
+footer .button {
+  opacity: 60%;
+}
+footer .button.tg {
   background-image: url(../img/icons/tg-logo-footer.svg);
 }
-footer .button.vk{
+footer .button.vk {
   background-image: url(../img/icons/vk-logo-footer.svg);
 }
-footer .button.yt{
+footer .button.yt {
   background-image: url(../img/icons/yt-logo-footer.svg);
 }
 
-.button-container{
-  display: flex;
-  grid-gap: 12px;
-  align-items: center;
-  z-index: 100;
-}
-
-.button:hover{
+.button:hover {
   transform: translateY(-5px);
-  box-shadow: inset 0px 0px 15px 5px var(--inset-color), 0px 10px 15px -5px var(--shadow-color);
+  box-shadow: inset 0px 0px 15px 5px var(--inset-color),
+    0px 10px 15px -5px var(--shadow-color);
+  opacity: 100%;
 }
 
 .button:active {
-  transition: all .1s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: all 0.1s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transform: translateY(0);
+  opacity: 100%;
 }

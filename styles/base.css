@@ -1,11 +1,10 @@
-@import url('../fonts/font.css');
-@import url('button.css');
-@import url('footer.css');
-@import url('hlink.css');
-
+@import url("../fonts/font.css");
+@import url("button.css");
+@import url("footer.css");
+@import url("hlink.css");
 
 * {
-    touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 html {
@@ -13,45 +12,60 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
-  min-height: 100vh;
+body {
   color: #231f20;
+  font-family: Noah, Arial, sans-serif;
+  min-height: 100vh;
 }
 
-.major{
-  font-family: Noah, Arial, sans-serif;
+main {
+  width: 80%;
+  max-width: 1920px;
+  margin: 80px auto 0 auto;
+}
+
+.major {
   font-weight: bold;
   font-size: 32px;
 }
 
-.minor{
-  font-family: Noah, Arial, sans-serif;
+.minor {
   font-size: 20px;
 }
 
-.text-container{
-  width: 80%;
+.major.white,
+.minor.white {
+  color: #fff;
 }
 
-.main-container{
-  width: 80%;
-  max-width: 1920px;
+.major.black,
+.minor.black {
+  color: #231f20;
 }
 
-@media (max-width:800px) {
-  .main-container {
-    width: 80%;
+.text-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-container .fun {
+  opacity: 0;
+  transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+}
+
+.text-container:hover {
+  .fun {
+    opacity: 100%;
   }
 }
 
-#main-title, p {
-  height: auto;
+#main-title {
   width: 60%;
-  margin: 40px auto 0 auto;
+  margin: 0 auto;
 }
 
-@media (max-width:800px) {
-  #main-title, p {
+@media (max-width: 800px) {
+  #main-title {
     width: 80%;
   }
 }
@@ -64,19 +78,7 @@ p {
   font-size: 32px;
 }
 
-p .fun{
-  opacity: 0;
-  transition: all .2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-}
-
-p:hover {
-  .fun {
-    opacity: 100%;
-  }
-}
-
 .golink {
-
 }
 
 /* Полоса прокрутки */
@@ -87,6 +89,6 @@ body::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(35, 31, 32, .3);
+  background-color: rgba(35, 31, 32, 0.3);
   border-radius: 20px;
 }
