@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:72;stroke-dashoffset:72;">
+  <style type="text/css">
+    .a {animation: sm .7s cubic-bezier(0.75, 0.35, 0.4, 0.99) .2s forwards;}
+    .b {animation: sm .8s cubic-bezier(0.75, 0.35, 0.4, 0.99) forwards;}
+    @keyframes sm {0%{stroke-dasharray:72;stroke-dashoffset:72;}100%{stroke-dashoffset: 0;}}
+  </style>
+  <circle class="a" cx="12" cy="12" r="4"></circle>
+  <path class="b" d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path> 
+</svg>
