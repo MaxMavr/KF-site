@@ -1,7 +1,7 @@
 .grid-case {
   display: grid;
   grid-auto-rows: 50vh;
-  grid-gap: 30px;
+  gap: 40px;
 
   grid-template-columns: repeat(
     auto-fit,
@@ -46,7 +46,7 @@
 
   order: 2;
   height: auto;
-  margin: 5px 10px 0px 10px;
+  margin: 10px 10px 0px 10px;
 }
 
 .case .caption h4 {

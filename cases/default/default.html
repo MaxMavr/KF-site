@@ -14,14 +14,14 @@
   <link rel="icon" href="../../img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" type="text/css" href="../../styles/reset.css">
   <link rel="stylesheet" type="text/css" href="../../styles/base.css">
-  <link rel="stylesheet" type="text/css" href="../../styles/pop-up.css"> <!-- TODO ЕСЛИ НЕТ ПОПАПА УБРАТЬ -->
+  <link rel="stylesheet" type="text/css" href="../../styles/pop-up.css">
   <link rel="stylesheet" type="text/css" href="../cases-header.css">
   <link rel="stylesheet" type="text/css" href="default.css">
 </head>
 
 <body>
   <header>
-    <h1 id="project-title">default</h1>
+    <h1 id="project-title">depfault</h1>
     <!-- TODO КНОПКИ -->
     <div class="button-container">
       <a href="#" class="button yt"></a>
@@ -118,26 +118,24 @@
     <span>V v</span> <span>W w</span> <span>Xx</span> <span>Yy</span> <span>Zz</span>
   </div>
 
-  <!-- TODO ЕСЛИ НЕТ ПОПАПА УБРАТЬ -->
   <div class="pop-up-container"></div>
 
 </main>
   <footer>
     <a class="logo-footer" href="../../index.html"></a>
-    <p class="copyright minor white">Оригинальные авторские&nbsp;права<br>принадлежат&nbsp;KFproduction<br>Редакция&nbsp;2024</p>
+    <p class="copyright minor white">Оригинальные авторские права<br>принадлежат&nbsp;KFproduction<br>Редакция&nbsp;2024</p>
     <div class="footer-button-container">
-      <a class="copy-button hlink minor white">KFproduction@yandex.ru</a>
+      <a class="pop-up-button hlink minor white" data-mode="copy" data-img="../../img/icons/at-sign.svg" data-msg="Почта скопирована" data-copytxt="KFproduction@yandex.ru">KFproduction@yandex.ru</a>
       <div class="button-container">
         <a href="https://vk.com/kfprod" class="button vk"></a>
         <a href="https://t.me/maxmavr" class="button tg"></a>
         <a href="https://www.youtube.com/@kfprod" class="button yt"></a>
       </div>
-      <a class="copy-button-small button mail" data-copy="KFproduction@yandex.ru"></a>
+      <a class="pop-up-button button mail" data-mode="copy" data-img="../../img/icons/at-sign.svg" data-msg="Почта скопирована" data-copytxt="KFproduction@yandex.ru"></a>
     </div>
   </footer>
 
-  <!-- TODO ЕСЛИ НЕТ ПОПАПА УБРАТЬ -->
+  <script src="../../scripts/hlink.js"></script>
   <script src="../../scripts/pop-up.js"></script>
-
 </body>
 </html>

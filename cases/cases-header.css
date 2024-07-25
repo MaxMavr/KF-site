@@ -7,6 +7,7 @@ header {
 
   max-width: 80%;
   min-height: 25vh;
+  gap: 80px;
   margin: 5vh auto 0 auto;
 }
 
@@ -19,7 +20,7 @@ header {
   max-height: 100%;
   max-width: 100%;
   /* user-select: none; */
-  margin-right: 5vh;
+  /* margin-right: 5vh; */
   position: relative;
   bottom: 0px;
 

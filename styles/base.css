@@ -39,7 +39,7 @@ main {
 .text-container {
   width: 80%;
   font-size: 32px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .text-container .fun {
   opacity: 0;
@@ -53,14 +53,11 @@ main {
 
 #main-title {
   font-size: 48px;
-  width: 60%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 20px auto;
 }
 
 @media (max-width: 800px) {
-  #main-title {
-    width: 80%;
-  }
   .text-container {
     width: 100%;
   }
