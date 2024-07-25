@@ -24,11 +24,24 @@
     <h1 id="project-title">default</h1>
     <!-- TODO КНОПКИ -->
     <div class="button-container">
-      <a href="https://fontesk.com/melectron-font/" class="button fontesk"></a>
-      <a href="https://fontstorage.com/ru/font/kfproduction/melectron" class="button fontstorage"></a>
-      <a href="https://myskotom.ru/tproduct/504619321-765018708731-melectron-regular" class="button myskotom"></a>
-      <!-- <a href="../../download-res/Melectron-Regular.zip" download="Melectron-Regular.zip" class="button white download-button">Скачать</a> -->
-      <a href="#" class="button white download-button">Скачать</a>
+      <a href="#"
+        class="pop-up-button button black"
+        data-mode="copy"  
+        data-img="../../img/icons/check.svg"
+        data-msg="Почта скопирована" 
+        data-copytxt="mail@poshol.naxui">
+        Скопировать
+      </a>
+
+      <a href="#"
+        class="pop-up-button button black"
+        data-mode="dnld"
+        data-img="../../img/icons/download.svg"  
+        data-msg="Файл скачан" 
+        data-copytxt="">
+        Скачать
+      </a>
+
     </div>
   </header>
 
@@ -105,6 +118,7 @@
 
   <!-- TODO ЕСЛИ НЕТ ПОПАПА УБРАТЬ -->
   <div class="pop-up-container"></div>
+
 </main>
   <footer>
     <a class="logo-footer" href="../../index.html"></a>
@@ -120,25 +134,8 @@
     </div>
   </footer>
 
-  <!-- TODO ЕСЛИ НЕТ ПОПАПА СКАЧИВАНИЯ УБРАТЬ -->
-  <template id="pop-up-download-pattern">
-    <div class="pop-up">
-      <img src="../../img/icons/download.svg" alt=""></img>
-      <span>Шрифт скачан</span>
-    </div>
-  </template>
-
-  <!-- TODO ЕСЛИ НЕТ ПОПАПА КОПИРОВАНИЯ УБРАТЬ -->
-  <template id="pop-up-copy-pattern">
-    <div class="pop-up">
-      <img src="../../img/icons/check.svg" alt=""></img>
-      <span>Почта скопирована</span>
-    </div>
-  </template>
-
   <!-- TODO ЕСЛИ НЕТ ПОПАПА УБРАТЬ -->
-  <script src="../../scripts/pop-up download.js"></script>
-  <script src="../../scripts/pop-up copy.js"></script>
+  <script src="../../scripts/pop-up.js"></script>
 
 </body>
 </html>
