@@ -71,6 +71,7 @@
 
 footer .button,
 .button.mail {
+  --inset-color: rgba(0, 0, 0, 0);
   opacity: 60%;
 }
 

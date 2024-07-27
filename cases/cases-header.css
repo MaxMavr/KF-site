@@ -11,8 +11,7 @@ header {
   margin: 5vh auto 0 auto;
 }
 
-#project-title {
-  font-family: Noah, Arial, sans-serif;
+h1 {
   color: #231f20;
   line-height: .621;
   font-weight: bold;
@@ -28,4 +27,10 @@ header {
 	font-style: normal;
   font-size: min(30vw, 25vh);
   vertical-align: baseline;
+}
+
+h2 {
+  font-size: 48px;
+  width: 100%;
+  margin: 20px auto;
 }

@@ -1,40 +1,43 @@
-var cbpAnimatedHeader = (function() {
-	var docElem = document.documentElement,
-		header = document.querySelector('header'),
-		plug = document.querySelector('.header-plug'),
-		didScroll = false,
-		changeHeaderOn = 20;
+let docElem = document.documentElement,
+	header = document.querySelector('header'),
+	plug = document.querySelector('.header-plug'),
+	scrollArrow = document.querySelector('#scroll-arrow'),
+	didScroll = false,
+	changeHeaderOn = 10;
 
-	function init() {
-		window.addEventListener('scroll', function(event) {
-			if(!didScroll) {
+scrollArrow.onclick = () => {
+	window.scrollBy({
+		top: 15,
+		behavior: 'smooth' // добавляет плавность прокрутки
+	});
+}
+
+function listen() {
+	window.addEventListener('scroll',
+		function (event) {
+			if (!didScroll) {
 				didScroll = true;
 				setTimeout(scrollPage, 50);
 			}
-		}, false );
+	}, false);
+}
+
+function scrollPage() {
+	let sy = getScrollY();
+	if (sy >= changeHeaderOn) {
+		header.classList.add('narrow');
+		plug.classList.add('narrow');
+		// setTimeout(scrollPage, 80);
+		// document.querySelector('.header-container').appendChild(button);
 	}
+	// else {
+	// 	header.classList.remove('narrow');
+	// }
+	// didScroll = false;
+}
 
-	function scrollPage() {
-		var sy = scrollY();
-    if ( sy >= changeHeaderOn ) {
+function getScrollY() {
+	return window.scrollY || document.documentElement.scrollTop;
+}
 
-
-			header.classList.add('narrow');
-			plug.classList.add('narrow');
-
-			// setTimeout(scrollPage, 80);
-			// document.querySelector('.header-container').appendChild(button);
-		}
-		// else {
-		// 	header.classList.remove('narrow');
-		// }
-		// didScroll = false;
-	}
-
-	function scrollY() {
-		return window.scrollY || docElem.scrollTop;
-	}
-
-	init();
-
-})();
+listen();

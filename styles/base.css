@@ -17,6 +17,9 @@ body {
 }
 
 main {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
   width: 80%;
   max-width: 1920px;
   margin: 80px auto 80px auto;
@@ -36,29 +39,30 @@ main {
   color: #231f20;
 }
 
-.text-container {
+p:not([class]) {
   width: 80%;
   font-size: 32px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
-.text-container .fun {
+p:not([class]) .fun {
   opacity: 0;
   transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
-.text-container:hover {
+p:not([class]):hover {
   .fun {
     opacity: 100%;
   }
 }
 
-#main-title {
+h1 {
   font-size: 48px;
   width: 100%;
-  margin: 20px auto;
+  margin: 0 auto;
+  scroll-margin-top: 116px;
 }
 
 @media (max-width: 800px) {
-  .text-container {
+  p:not([class]) {
     width: 100%;
   }
 }

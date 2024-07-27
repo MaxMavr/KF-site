@@ -1,4 +1,4 @@
-.grid-case {
+.grid-container {
   display: grid;
   grid-auto-rows: 50vh;
   gap: 40px;
@@ -9,17 +9,18 @@
   );
 }
 
-.grid-case .text-container {
+.grid-container p:not([class]) {
   width: 100%;
   margin: 10px;
+  box-sizing: border-box;
 }
 
-.case {
+.grid-container article {
   display: flex;
   flex-direction: column;
 }
 
-.case a {
+.grid-container article .preview {
   order: 1;
   border-radius: 20px;
   width: 100%;
@@ -32,33 +33,26 @@
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
-.case a:hover {
+.grid-container article .preview:hover {
   transform: translateY(-10px);
   box-shadow: inset 0px 0px 15px 5px rgba(35, 31, 32, 0.3),
     0px 10px 15px -5px rgba(35, 31, 32, 0.3);
 }
 
-.case .caption {
+.grid-container article .caption {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: baseline;
   justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
 
   order: 2;
-  height: auto;
   margin: 10px 10px 0px 10px;
 }
 
-.case .caption h4 {
+/* .grid-container article section h3,
+.grid-container article section p.minor {
   line-height: 1;
-  font-size: 3vh;
-  font-weight: bold;
-  vertical-align: middle;
-}
-
-.case .caption span {
-  height: auto;
-  font-size: 2vh;
-  font-weight: normal;
-  vertical-align: middle;
-}
+  vertical-align: baseline;
+} */

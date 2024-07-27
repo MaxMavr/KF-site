@@ -7,7 +7,7 @@
 .logo-cube {
   height: 100%;
   aspect-ratio: 1;
-  perspective: 0; /* JS */
+  perspective: 100px; /* JS */
   transition: all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 

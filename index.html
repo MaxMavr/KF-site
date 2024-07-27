@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
   <link rel="stylesheet" type="text/css" href="styles/base.css">
   <link rel="stylesheet" type="text/css" href="styles/header.css">
-  <link rel="stylesheet" type="text/css" href="styles/grid-case.css">
+  <link rel="stylesheet" type="text/css" href="styles/grids.css">
 	<link rel="stylesheet" type="text/css" href="styles/pop-up.css">
 </head>
 
@@ -34,47 +34,59 @@
         </div>
         <img src="img/logo/logo-descr.svg" alt="" class="logo-descr"></img>
       </a>
-      <a class="copy-button hlink minor white">KFproduction@yandex.ru</a>
-      <a class="copy-button-small button mail" data-copy="KFproduction@yandex.ru"></a>
+      
+      <a class="pop-up-button hlink minor white"
+        data-mode="copy"
+        data-img="img/icons/at-sign.svg"
+        data-msg="Почта скопирована" 
+        data-copytxt="KFproduction@yandex.ru">
+        KFproduction@yandex.ru
+      </a>
+
+      <a class="pop-up-button button mail"
+        data-mode="copy"
+        data-img="img/icons/at-sign.svg"
+        data-msg="Почта скопирована"
+        data-copytxt="KFproduction@yandex.ru"></a>
   	</div>
-    <a href="#main-title"><img src="img/icons/chevron-down.svg" alt="" class="scroll-arrow"></img></a>
+    <img id="scroll-arrow" src="img/icons/down-arrow.svg" alt=""></img>
   </header>
 
   <div class="header-plug"></div>
 
   <main>
-    <h1 id="main-title">Портфолио ебать какой студии из одного человека</h1>
+    <h1>Портфолио ебать какой студии из одного человека</h1>
 
-    <p class="text-container">Я настолько крут, что могу в одного пародировать студию хуё-моё дизайна.
+    <p>Я настолько крут, что могу в одного пародировать студию хуё-моё дизайна.
       Так что быстро написал на почту и заказал ахуительный дизайн.
       <br><strong>&copy; Максим Мавряшин&trade;</strong></p>
 
-    <div class="grid-case">
+    <div class="grid-container">
 
-      <p class="text-container">Поглядите <a class="hlink" href="#">Шоурил</a> перд тем как смотреть портфолио.</p>
+      <p>Поглядите <a class="hlink" href="#">Шоурил</a> перд тем как смотреть портфолио.</p>
 
-      <div class="case">
-        <a href="cases/melectron/melectron.html" target="_blank" style="background-image: url(cases/melectron/img/cover.webp);"></a>
-        <section class="caption"><h4>Melectron</h4><span>Шрифт</span></section>
-      </div>
+      <article>
+        <a class="preview" href="cases/melectron/melectron.html" style="background-image: url(cases/melectron/img/cover.webp);"></a>
+        <a class="caption" href="cases/melectron/melectron.html" target="_blank"><h3 class="major">Melectron</h3><p class="minor">Шрифт</p></a>
+      </article>
 
-      <div class="case">
-        <a href="cases/morfin/morfin.html" target="_blank" style="background-image: url(cases/morfin/img/cover.webp);"></a>
-        <section class="caption"><h4>Morfin</h4><span>Шрифт</span></section>
-      </div>
+      <article>
+        <a class="preview" href="cases/morfin/morfin.html" style="background-image: url(cases/morfin/img/cover.webp);"></a>
+        <a class="caption" href="cases/morfin/morfin.html" target="_blank"><h3 class="major">Morfin</h3><p class="minor">Шрифт</p></a>
+      </article>
 
-      <div class="case">
-        <a href="cases/ПервыйПечатный/ПервыйПечатный.html" target="_blank" style="background-image: url(cases/ПервыйПечатный/img/cover.webp);"></a>
-        <section class="caption"><h4>Первый Печатный</h4><span>Айдентика</span></section>
-      </div>
+      <article>
+        <a class="preview" href="cases/ПервыйПечатный/ПервыйПечатный.html" style="background-image: url(cases/ПервыйПечатный/img/cover.webp);"></a>
+        <a class="caption" href="cases/ПервыйПечатный/ПервыйПечатный.html" target="_blank"><h3 class="major">Первый Печатный</h3><p class="minor">Айдентика</p></a>
+      </article>
 
-      <div class="case">
-        <a href="cases/OQUN/OQUN.html" target="_blank" style="background-image: url(cases/OQUN/img/cover.webp);"></a>
-        <section class="caption"><h4>OQUN'</h4><span>Логотип</span></section>
-      </div>
+      <article>
+        <a class="preview" href="cases/OQUN/OQUN.html" style="background-image: url(cases/OQUN/img/cover.webp);"></a>
+        <a class="caption" href="cases/OQUN/OQUN.html" target="_blank"><h3 class="major">OQUN'</h3><p class="minor">Логотип</p></a>
+      </article>
     </div>
 
-    <p class="text-container">Работ ещё дофига, но мне лень их оформлять. Нате ссылку на Я.Диск</p>
+    <p>Работ ещё дофига, но мне лень их оформлять. Нате ссылку на Я.Диск</p>
   </main>
 
   <div class="pop-up-container"></div>
@@ -89,16 +101,9 @@
     </div>
   </footer>
 
-  <template id="pop-up-copy-pattern">
-    <div class="pop-up">
-      <img src="img/icons/check.svg" alt=""></img>
-      <span>Почта скопирована</span>
-    </div>
-  </template>
-
   <script src="scripts/header.js"></script>
   <script src="scripts/logo-cube.js"></script>
   <script src="scripts/hlink.js"></script>
-  <script src="scripts/pop-up copy.js"></script>
+  <script src="scripts/pop-up.js"></script>
 </body>
 </html>
