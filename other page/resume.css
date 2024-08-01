@@ -1,0 +1,16 @@
+
+main {
+    flex-direction: row;
+}
+
+h2 {
+    margin: 0;
+    width: auto;
+}
+
+.resume-photo {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}

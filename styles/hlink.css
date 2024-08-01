@@ -19,7 +19,7 @@
   content: "";
   display: block;
   width: 0;
-  height: 2px;
+  height: 1.5px;
   background: var(--link-color);
   left: 50%;
   transform: translate(-50%, -375%);

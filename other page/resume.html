@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<!--
+  Оригинальные авторские права
+  принадлежат KFproduction
+  Редакция 2024
+-->
+
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8" />
+    <title>Резюме</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/grids.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/pop-up.css" />
+    <link rel="stylesheet" type="text/css" href="resume.css" />
+  </head>
+
+  <body>
+    <main>
+        <div>
+            <h2>Резюме</h2>
+            <img class="resume-photo" src="../img/recume.webp" alt="">
+            <p class="minor">Максим Мавряшин</p>
+            <p class="minor">Фотограф <a class="hlink" href="">Алиса Барсукова</a></p>
+            <a href="../../download-res/resume.pdf"
+               download="Максима Мавряшина резюме.pdf"
+               class="pop-up-button button black"
+               data-mode="dnld"
+               data-img="../../img/icons/file-text.svg"
+               data-msg="Резюме скачено">
+                 .pdf
+            </a>
+        </div>
+
+        <div>
+          <p>
+            2018&ndash;2020
+            <br>
+            <a class="hlink" href="">Личные проекты</a>
+          </p>
+          <p>
+            2020 по настоящий день
+            <br>
+            Фриланс
+          </p>
+        </div>
+
+      <div class="pop-up-container"></div>
+    </main> 
+    
+    <footer>
+      <a class="logo-footer" href="../../index.html" target="KFproduction"></a>
+      <p class="copyright minor white">
+        Оригинальные авторские права<br />принадлежат&nbsp;KFproduction<br />Редакция&nbsp;2024
+      </p>
+      <div class="footer-button-container">
+        <a
+          class="pop-up-button hlink minor white"
+          data-mode="copy"
+          data-img="../../img/icons/at-sign.svg"
+          data-msg="Почта скопирована"
+          data-copytxt="KFproduction@yandex.ru"
+          >KFproduction@yandex.ru</a
+        >
+        <div class="button-container">
+          <a href="https://vk.com/kfprod" class="button vk"></a>
+          <a href="https://t.me/maxmavr" class="button tg"></a>
+          <a href="https://www.youtube.com/@kfprod" class="button yt"></a>
+        </div>
+        <a
+          class="pop-up-button button mail"
+          data-mode="copy"
+          data-img="../../img/icons/at-sign.svg"
+          data-msg="Почта скопирована"
+          data-copytxt="KFproduction@yandex.ru"
+        ></a>
+      </div>
+    </footer>
+
+    <script src="../../scripts/hlink.js"></script>
+    <script src="../../scripts/pop-up.js"></script>
+  </body>
+</html>

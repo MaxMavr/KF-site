@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: flex-end;
+
+  width: 80%;
+  max-width: 1600px;
+  column-gap: 80px;
+  /* gap: 80px; */
+  margin: 80px auto 0 auto;
+}
+
+.project-footer {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.project-footer p.minor:last-child {
+  text-align: right;
+  margin-left: auto;
+}
+
+@media (max-width: 800px) {
+  header .button-container {
+    flex-wrap: wrap;
+  }
+}

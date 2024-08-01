@@ -21,8 +21,8 @@ main {
   gap: 20px;
   flex-direction: column;
   width: 80%;
-  max-width: 1920px;
-  margin: 80px auto 80px auto;
+  max-width: 1600px;
+  margin: 40px auto 80px auto;
 }
 
 .major {
@@ -39,10 +39,25 @@ main {
   color: #231f20;
 }
 
-p:not([class]) {
+h1 {
+  font-weight: bold;
+  max-height: 100%;
+  max-width: 100%;
+  font-size: 128px;
+  width: 60%;
+  vertical-align: baseline;
+}
+
+p:not([class]), h2 {
   width: 80%;
-  font-size: 32px;
   margin: 0 auto;
+}
+
+h2 {
+  font-size: 48px;
+}
+p:not([class]) {
+  font-size: 32px;
 }
 p:not([class]) .fun {
   opacity: 0;
@@ -54,15 +69,11 @@ p:not([class]):hover {
   }
 }
 
-h1 {
-  font-size: 48px;
-  width: 100%;
-  margin: 0 auto;
-  scroll-margin-top: 116px;
-}
-
 @media (max-width: 800px) {
-  p:not([class]) {
+  h1 {
+    font-size: 64px;
+  }
+  p:not([class]), h2 {
     width: 100%;
   }
 }
