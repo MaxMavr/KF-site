@@ -1,14 +1,12 @@
-
 :root {
   --cube-origin: 50vh 50vh -50vh; /* JS */
 }
-
 
 .logo-cube {
   height: 100%;
   aspect-ratio: 1;
   perspective: 100px; /* JS */
-  transition: all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
 .logo-descr {
@@ -31,25 +29,30 @@
 }
 
 .side.front {
-  background: url(../img/logo/cube/logo-front.svg) no-repeat center center / contain;
+  background: url(../img/logo/cube/logo-front.svg) no-repeat center center /
+    contain;
 }
 
 .side.top {
-  background: url(../img/logo/cube/logo-top.svg) no-repeat center center / contain;
+  background: url(../img/logo/cube/logo-top.svg) no-repeat center center /
+    contain;
   transform: rotateX(90deg);
 }
 
 .side.buttom {
-  background: url(../img/logo/cube/logo-buttom.svg) no-repeat center center / contain;
+  background: url(../img/logo/cube/logo-buttom.svg) no-repeat center center /
+    contain;
   transform: rotateX(-90deg);
 }
 
 .side.right {
-  background: url(../img/logo/cube/logo-right.svg) no-repeat center center / contain;
+  background: url(../img/logo/cube/logo-right.svg) no-repeat center center /
+    contain;
   transform: rotateY(90deg);
 }
 
 .side.left {
-  background: url(../img/logo/cube/logo-left.svg) no-repeat center center / contain;
+  background: url(../img/logo/cube/logo-left.svg) no-repeat center center /
+    contain;
   transform: rotateY(-90deg);
 }

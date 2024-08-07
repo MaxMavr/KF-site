@@ -2,15 +2,14 @@
   display: flex;
   grid-gap: 12px;
   align-items: center;
-  z-index: 100;
+  z-index: 10;
 }
 
 .button {
   border-radius: 12px;
   padding: 12px 24px;
-  transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 
-  text-decoration: none;
   font-weight: bold;
   font-size: 20px;
 
@@ -18,82 +17,183 @@
   justify-content: center;
   align-items: center;
 
-  --shadow-color: rgba(255, 255, 255, 0.3);
-  --inset-color: rgba(255, 255, 255, 0.3);
   user-select: none;
+  white-space: nowrap;
+  text-decoration: none;
+
+  --shadow-color: rgba(35, 31, 32, 0.3);
+  box-shadow: 0 3px 12px 0 var(--shadow-color);
+
+  color: #fff;
+  background: #231f20;
 }
 
 .button.white {
   color: #231f20;
   background: #fff;
-  --inset-color: rgba(35, 31, 32, 0.3);
+  --shadow-color: rgba(255, 255, 255, 0.3);
 }
-
 .button.black {
   color: #fff;
   background: #231f20;
-  --inset-color: rgba(255, 255, 255, 0.3);
+  --shadow-color: rgba(35, 31, 32, 0.3);
 }
 
-.button:empty {
+.button:empty,
+.button.mail {
   height: 48px;
-  width: 48px;
+  aspect-ratio: 1;
   padding: 0;
+  background: transparent;
+  --shadow-color: transparent;
 }
 
-.button.tg {
+.button.in-text {
+  display: inline-block;
+  height: 38px;
+  vertical-align: sub;
+  box-shadow: 0 0 12px 0 var(--shadow-color);
+}
+
+.button.tg,
+.button.tg.black {
+  background-image: url(../img/icons/logo-black/tg-logo.svg);
+}
+.button.vk,
+.button.vk.black {
+  background-image: url(../img/icons/logo-black/vk-logo.svg);
+}
+.button.yt,
+.button.yt.black {
+  background-image: url(../img/icons/logo-black/yt-logo.svg);
+}
+.button.fontesk,
+.button.fontesk.black {
+  background-image: url(../img/icons/logo-black/fontesk-logo.svg);
+}
+.button.fontstorage,
+.button.fontstorage.black {
+  background-image: url(../img/icons/logo-black/fontstorage-logo.svg);
+}
+.button.myskotom,
+.button.myskotom.black {
+  background-image: url(../img/icons/logo-black/myskotom-logo.svg);
+}
+
+.button.tg.white {
+  background-image: url(../img/icons/logo-white/tg-logo.svg);
+}
+.button.vk.white {
+  background-image: url(../img/icons/logo-white/vk-logo.svg);
+}
+.button.yt.white {
+  background-image: url(../img/icons/logo-white/yt-logo.svg);
+}
+.button.fontesk.white {
+  background-image: url(../img/icons/logo-white/fontesk-logo.svg);
+}
+.button.fontstorage.white {
+  background-image: url(../img/icons/logo-white/fontstorage-logo.svg);
+}
+.button.myskotom.white {
+  background-image: url(../img/icons/logo-white/myskotom-logo.svg);
+}
+
+.button.tg.colored {
   --shadow-color: rgba(40, 168, 232, 0.3);
-  background-image: url(../img/icons/tg-logo.svg);
+  background-image: url(../img/icons/logo-colored/tg-logo.svg);
 }
-.button.vk {
+.button.vk.colored {
   --shadow-color: rgba(0, 119, 255, 0.3);
-  background-image: url(../img/icons/vk-logo.svg);
+  background-image: url(../img/icons/logo-colored/vk-logo.svg);
 }
-.button.yt {
+.button.yt.colored {
   --shadow-color: rgba(255, 0, 0, 0.3);
-  background-image: url(../img/icons/yt-logo.svg);
+  background-image: url(../img/icons/logo-colored/yt-logo.svg);
 }
-.button.fontesk {
+.button.fontesk.colored {
   --shadow-color: rgba(1, 148, 255, 0.3);
-  background-image: url(../img/icons/fontesk-logo.svg);
+  background-image: url(../img/icons/logo-colored/fontesk-logo.svg);
 }
-.button.fontstorage {
+.button.fontstorage.colored {
   --shadow-color: rgba(3, 125, 202, 0.3);
-  background-image: url(../img/icons/fontstorage-logo.svg);
+  background-image: url(../img/icons/logo-colored/fontstorage-logo.svg);
 }
-.button.myskotom {
-  --inset-color: rgba(0, 0, 0, 0.3);
-  background-image: url(../img/icons/myskotom-logo.svg);
+.button.myskotom.colored {
+  --shadow-color: rgba(35, 31, 32, 0.3);
+  background-image: url(../img/icons/logo-colored/myskotom-logo.svg);
 }
+
+.button.ae {
+  --shadow-color: rgba(34, 0, 79, 0.3);
+  background-image: url(../img/icons/program/ae.svg);
+}
+.button.ai {
+  --shadow-color: rgba(51, 0, 0, 0.3);
+  background-image: url(../img/icons/program/ai.svg);
+}
+.button.au {
+  --shadow-color: rgba(0, 38, 32, 0.3);
+  background-image: url(../img/icons/program/au.svg);
+}
+.button.pr {
+  --shadow-color: rgba(55, 0, 68, 0.3);
+  background-image: url(../img/icons/program/pr.svg);
+}
+.button.ps {
+  --shadow-color:  rgba(0, 0, 38, 0.3);
+  background-image: url(../img/icons/program/ps.svg);
+}
+.button.git {
+  --shadow-color: rgba(240, 60, 46, 0.3);
+  background-image: url(../img/icons/program/git.svg);
+}
+.button.python {
+  --shadow-color: rgba(56, 116, 166, 0.3);
+  background-image: url(../img/icons/program/python.svg);
+}
+.button.fontlab {
+  --shadow-color: rgba(15, 33, 51, 0.3);
+  background-image: url(../img/icons/program/fontlab.svg);
+}
+
 .button.mail {
   background-image: url(../img/icons/mail-fill.svg);
 }
 
 footer .button,
+.font-demonstration-container .button,
 .button.mail {
-  --inset-color: rgba(0, 0, 0, 0);
   opacity: 60%;
 }
 
 footer .button.tg {
-  background-image: url(../img/icons/tg-logo-footer.svg);
+  background-image: url(../img/icons/logo-white/tg-logo.svg);
 }
 footer .button.vk {
-  background-image: url(../img/icons/vk-logo-footer.svg);
+  background-image: url(../img/icons/logo-white/vk-logo.svg);
 }
 footer .button.yt {
-  background-image: url(../img/icons/yt-logo-footer.svg);
+  background-image: url(../img/icons/logo-white/yt-logo.svg);
 }
 
-.button:hover {
-  transform: translateY(-5px);
-  box-shadow: inset 0px 0px 15px 5px var(--inset-color),
-    0px 10px 15px -5px var(--shadow-color);
+.button:hover:not(.in-text):not(:active) {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 6px 12px -6px var(--shadow-color);
   opacity: 100%;
+}
+
+.button:empty:hover:not(.in-text):not(:active) {
+  transform: scale(1.2, 1.2);
 }
 
 .button:active {
   transition: all 0.1s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  transform: translateY(0);
-  opacity: 100%;
+  transform: scale(1, 1);
 }
+
+/* .button.showreel {
+  --shadow-color: rgba(35, 31, 32, 0);
+  aspect-ratio: 16 / 9;
+  background-image: url(../img/icons/showreel.svg);
+} */

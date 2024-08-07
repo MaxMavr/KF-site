@@ -18,19 +18,22 @@ body {
 
 main {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   flex-direction: column;
   width: 80%;
   max-width: 1600px;
   margin: 40px auto 80px auto;
 }
 
-.major {
-  font-weight: bold;
-  font-size: 32px;
+main > p:not([class]),
+h2 {
+  width: 80%;
+  margin: 0 auto;
 }
+
 .minor {
   font-size: 20px;
+  font-weight: normal;
 }
 .white {
   color: #fff;
@@ -43,19 +46,21 @@ h1 {
   font-weight: bold;
   max-height: 100%;
   max-width: 100%;
-  font-size: 128px;
-  width: 60%;
+  font-size: 112px;
   vertical-align: baseline;
-}
-
-p:not([class]), h2 {
-  width: 80%;
-  margin: 0 auto;
+  line-height: 128px;
+  max-width: 60%;
 }
 
 h2 {
+  margin-bottom: -30px;
   font-size: 48px;
 }
+
+h3 {
+  font-size: 40px;
+}
+
 p:not([class]) {
   font-size: 32px;
 }
@@ -69,11 +74,17 @@ p:not([class]):hover {
   }
 }
 
+strong {
+  font-weight: bold;
+}
+
 @media (max-width: 800px) {
   h1 {
     font-size: 64px;
+    line-height: 64px;
+    max-width: 100%;
   }
-  p:not([class]), h2 {
+  main > p:not([class]) {
     width: 100%;
   }
 }

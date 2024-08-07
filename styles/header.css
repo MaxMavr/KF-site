@@ -28,7 +28,7 @@ header {
   position: fixed;
   inset: 0;
   background: #231f20;
-  z-index: 10000;
+  z-index: 30;
 }
 
 .header-container {
@@ -61,9 +61,11 @@ header {
 
 #scroll-arrow {
   position: absolute;
+  cursor: pointer;
   left: 50%;
   bottom: 20px;
-  filter: invert(95%) sepia(0%) saturate(7487%) hue-rotate(97deg) brightness(108%) contrast(98%);
+  filter: invert(95%) sepia(0%) saturate(7487%) hue-rotate(97deg)
+    brightness(108%) contrast(98%);
   height: 6vh;
   animation: happened 1.5s alternate infinite cubic-bezier(0.6, 0, 0.4, 1);
 }

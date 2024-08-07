@@ -1,12 +1,9 @@
-
-
-
 .pop-up-container {
   position: fixed;
   bottom: 25px;
   left: 50%;
   display: flex;
-  z-index: 100;
+  z-index: 20;
   flex-flow: column;
   align-items: center;
   transform: translate(-50%, 0);
@@ -20,6 +17,11 @@
   padding: 12px 24px 12px 18px;
   border-radius: 24px;
   background: #231f20;
+
+  user-select: none;
+  white-space: nowrap;
+  text-decoration: none;
+  pointer-events: none;
 
   opacity: 0;
   transform: translateY(150%);

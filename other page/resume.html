@@ -8,9 +8,13 @@
 
 <html lang="ru-RU">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Мавряшин Максим — графический дизайнер. Профессиональные навыки и портфолио работ."
+    />
     <title>Резюме</title>
-    <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="../img/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" type="text/css" href="../styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="../styles/base.css" />
@@ -21,37 +25,87 @@
 
   <body>
     <main>
-        <div>
-            <h2>Резюме</h2>
-            <img class="resume-photo" src="../img/recume.webp" alt="">
-            <p class="minor">Максим Мавряшин</p>
-            <p class="minor">Фотограф <a class="hlink" href="">Алиса Барсукова</a></p>
-            <a href="../../download-res/resume.pdf"
-               download="Максима Мавряшина резюме.pdf"
-               class="pop-up-button button black"
-               data-mode="dnld"
-               data-img="../../img/icons/file-text.svg"
-               data-msg="Резюме скачено">
-                 .pdf
+      <h2>Резюме</h2>
+      <div class="resume-container">
+        <section>
+          <img class="resume-photo" src="../img/resume.webp" alt="" />
+          <p>Максим Мавряшин</p>
+          <div class="button-container">
+            <!-- ../../download-res/resume.pdf -->
+            <a
+              href="#"
+              download="Максим Мавряшин резюме.pdf"
+              class="pop-up-button button black"
+              data-mode="dnld"
+              data-img="../img/icons/pop-up/file-text.svg"
+              data-msg="Резюме скачено"
+            >
+              Скачать .pdf
             </a>
-        </div>
+          </div>
+          <p class="minor">
+            Фотограф <a class="hlink" href="">Алиса Барсукова</a>
+          </p>
+        </section>
 
-        <div>
+        <section>
           <p>
-            2018&ndash;2020
-            <br>
+            2018 год &mdash; 2020 год
+            <br />
             <a class="hlink" href="">Личные проекты</a>
           </p>
           <p>
-            2020 по настоящий день
-            <br>
-            Фриланс
+            2020 год &mdash; по настоящий день
+            <br />
+            Фриланс <a class="hlink" href="">Портфолио</a>
           </p>
-        </div>
+
+          <p></p>
+
+          <p>
+            Разрабатываю визуальные концепции для компаний, включая логотипы и
+            фирменный стиль.
+          </p>
+          <p>Создаю рекламные материалы и работаю с печатной продукцией.</p>
+          <p>
+            Создаю инструменты оптимизации, для создания фирменной продукции.
+          </p>
+          <p>Создал, пока, три оригинальных шрифта.</p>
+          <p>
+            Самостоятельно разработал и реализовал собственный веб-сайт, без
+            мам, пап и тильды.
+          </p>
+          <p>
+            Владею
+            <a class="button ai in-text"></a> Illustrator и
+            <a class="button ps in-text"></a> Photoshop,
+            <br />
+            а также имею навыки в <a class="button ae in-text"></a> After
+            Effects, <a class="button pr in-text"></a> Premiere Pro,
+            <a class="button au in-text"></a> Audition,
+            <a class="button fontlab in-text"></a> FontLab,
+            <a class="button python in-text"></a> Python и
+            <a class="button git in-text"></a> Git, но не планирую их
+            использовать в работе.
+          </p>
+          <p>
+            В свободное время увлекаюсь музыкой — сам не играю, анализом текстов
+            и разбором партий.<br />
+            Рисую плакаты вечерами.<br />
+            Собираю крышечки отгазировок.<br />
+            Уверенный пользователь ПК.
+          </p>
+          <p class="minor">
+            Рекламные баннеры &bull; Презентации &bull; Полиграфия &bull; Дизайн
+            упаковки &bull; Упаковка социальных сетей &bull; Брендинг &bull;
+            айдентика &bull; Брендбуки &bull; Гайд-лайны &bull; Постеры
+          </p>
+        </section>
+      </div>
 
       <div class="pop-up-container"></div>
-    </main> 
-    
+    </main>
+
     <footer>
       <a class="logo-footer" href="../../index.html" target="KFproduction"></a>
       <p class="copyright minor white">
@@ -61,7 +115,7 @@
         <a
           class="pop-up-button hlink minor white"
           data-mode="copy"
-          data-img="../../img/icons/at-sign.svg"
+          data-img="../img/icons/pop-up/at-sign.svg"
           data-msg="Почта скопирована"
           data-copytxt="KFproduction@yandex.ru"
           >KFproduction@yandex.ru</a
@@ -74,14 +128,14 @@
         <a
           class="pop-up-button button mail"
           data-mode="copy"
-          data-img="../../img/icons/at-sign.svg"
+          data-img="../img/icons/pop-up/at-sign.svg"
           data-msg="Почта скопирована"
           data-copytxt="KFproduction@yandex.ru"
         ></a>
       </div>
     </footer>
 
-    <script src="../../scripts/hlink.js"></script>
-    <script src="../../scripts/pop-up.js"></script>
+    <script src="../scripts/hlink.js"></script>
+    <script src="../scripts/pop-up.js"></script>
   </body>
 </html>
