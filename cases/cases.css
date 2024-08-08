@@ -55,13 +55,20 @@ img.img-demonstration + img.img-demonstration {
 }
 
 .poster-demonstration > div {
-  display: flex;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   cursor: pointer;
   flex: 1;
   width: 100%;
+}
+
+.poster-demonstration > span {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding: 0 10px;
 }
 
 .poster-demonstration-container.s1x1 .poster-demonstration div {
