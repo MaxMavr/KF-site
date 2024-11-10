@@ -13,6 +13,11 @@
   position: relative;
 }
 
+.logo-demonstration div object{
+  width: 100%;
+  height: 100%;
+}
+
 .logo-demonstration div > a,
 .logo-demonstration div p {
   display: block;

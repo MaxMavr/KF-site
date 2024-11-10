@@ -22,6 +22,11 @@ body {
   margin: 0 auto 120px;
 }
 
+.nuqun-demonstration object{
+  width: 100%;
+  height: 100%;
+}
+
 .preview {
   display: block;
   font-family: nuqun, Arial, sans-serif;
