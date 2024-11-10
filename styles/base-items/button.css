@@ -1,0 +1,186 @@
+.button-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+.button {
+  border-radius: 12px;
+  padding: 12px 24px;
+  transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+
+  font-weight: bold;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  user-select: none;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+
+  --shadow-button-color: var(--shadow-color);
+  color: var(--txt-color);
+  background: var(--draw-color);
+
+  box-shadow: 0 3px 12px 0 var(--shadow-button-color);
+}
+
+.button.white {
+  color: var(--black);
+  background: var(--white);
+  --shadow-button-color: var(--white-shadow);
+}
+.button.black {
+  color: var(--white);
+  background: var(--black);
+  --shadow-button-color: var(--black-shadow);
+}
+.button.colored {
+  color: var(--white);
+  background: var(--link-color);
+  --shadow-button-color: var(--link-color);
+}
+
+.button:empty {
+  height: 48px;
+  aspect-ratio: 1;
+  padding: 0;
+  background: transparent;
+  --shadow-button-color: transparent;
+}
+
+.button.in-text {
+  display: inline-block;
+  height: 38px;
+  vertical-align: sub;
+  box-shadow: 0 0 12px 0 var(--shadow-button-color);
+}
+
+.button.tg {background-image: url(../../img/icons/logo-black/tg-logo.svg);}
+.button.vk {background-image: url(../../img/icons/logo-black/vk-logo.svg);}
+.button.yt {background-image: url(../../img/icons/logo-black/yt-logo.svg);}
+.button.fontesk {background-image: url(../../img/icons/logo-black/fontesk-logo.svg);}
+.button.fontstorage {background-image: url(../../img/icons/logo-black/fontstorage-logo.svg);}
+.button.myskotom {background-image: url(../../img/icons/logo-black/myskotom-logo.svg);}
+
+@media (prefers-color-scheme: dark) {
+  .button.tg {background-image: url(../../img/icons/logo-white/tg-logo.svg);}
+  .button.vk {background-image: url(../../img/icons/logo-white/vk-logo.svg);}
+  .button.yt {background-image: url(../../img/icons/logo-white/yt-logo.svg);}
+  .button.fontesk {background-image: url(../../img/icons/logo-white/fontesk-logo.svg);}
+  .button.fontstorage {background-image: url(../../img/icons/logo-white/fontstorage-logo.svg);}
+  .button.myskotom {background-image: url(../../img/icons/logo-white/myskotom-logo.svg);}
+} 
+
+.button.tg.black {background-image: url(../../img/icons/logo-black/tg-logo.svg);}
+.button.vk.black {background-image: url(../../img/icons/logo-black/vk-logo.svg);}
+.button.yt.black {background-image: url(../../img/icons/logo-black/yt-logo.svg);}
+.button.fontesk.black {background-image: url(../../img/icons/logo-black/fontesk-logo.svg);}
+.button.fontstorage.black {background-image: url(../../img/icons/logo-black/fontstorage-logo.svg);}
+.button.myskotom.black {background-image: url(../../img/icons/logo-black/myskotom-logo.svg);}
+
+.button.tg.white {background-image: url(../../img/icons/logo-white/tg-logo.svg);}
+.button.vk.white {background-image: url(../../img/icons/logo-white/vk-logo.svg);}
+.button.yt.white {background-image: url(../../img/icons/logo-white/yt-logo.svg);}
+.button.fontesk.white {background-image: url(../../img/icons/logo-white/fontesk-logo.svg);}
+.button.fontstorage.white {background-image: url(../../img/icons/logo-white/fontstorage-logo.svg);}
+.button.myskotom.white {background-image: url(../../img/icons/logo-white/myskotom-logo.svg);}
+
+
+.button.tg.colored {
+  --shadow-button-color: rgba(40, 168, 232, 0.3);
+  background-image: url(../../img/icons/logo-colored/tg-logo.svg);
+}
+.button.vk.colored {
+  --shadow-button-color: rgba(0, 119, 255, 0.3);
+  background-image: url(../../img/icons/logo-colored/vk-logo.svg);
+}
+.button.yt.colored {
+  --shadow-button-color: rgba(255, 0, 0, 0.3);
+  background-image: url(../../img/icons/logo-colored/yt-logo.svg);
+}
+.button.fontesk.colored {
+  --shadow-button-color: rgba(1, 148, 255, 0.3);
+  background-image: url(../../img/icons/logo-colored/fontesk-logo.svg);
+}
+.button.fontstorage.colored {
+  --shadow-button-color: rgba(3, 125, 202, 0.3);
+  background-image: url(../../img/icons/logo-colored/fontstorage-logo.svg);
+}
+.button.myskotom.colored {
+  --shadow-button-color: rgba(35, 31, 32, 0.3);
+  background-image: url(../../img/icons/logo-colored/myskotom-logo.svg);
+}
+
+.button.ae {
+  --shadow-button-color: rgba(34, 0, 79, 0.302);
+  background-image: url(../../img/icons/program/ae.svg);
+}
+.button.ai {
+  --shadow-button-color: rgba(51, 0, 0, 0.302);
+  background-image: url(../../img/icons/program/ai.svg);
+}
+.button.au {
+  --shadow-button-color: rgba(0, 38, 32, 0.302);
+  background-image: url(../../img/icons/program/au.svg);
+}
+.button.pr {
+  --shadow-button-color: rgba(55, 0, 68, 0.302);
+  background-image: url(../../img/icons/program/pr.svg);
+}
+.button.ps {
+  --shadow-button-color:  rgba(0, 0, 38, 0.302);
+  background-image: url(../../img/icons/program/ps.svg);
+}
+.button.git {
+  --shadow-button-color: rgba(240, 60, 46, 0.302);
+  background-image: url(../../img/icons/program/git.svg);
+}
+.button.python {
+  --shadow-button-color: rgba(56, 116, 166, 0.302);
+  background-image: url(../../img/icons/program/python.svg);
+}
+.button.fontlab {
+  --shadow-button-color: rgba(15, 33, 51, 0.302);
+  background-image: url(../../img/icons/program/fontlab.svg);
+}
+
+.button.mail {
+  background-image: url(../../img/icons/mail-fill.svg);
+}
+
+footer .button,
+.font-demonstration-container .button,
+.button.mail {
+  opacity: 60%;
+}
+
+footer .button.tg {
+  background-image: url(../../img/icons/logo-white/tg-logo.svg);
+}
+footer .button.vk {
+  background-image: url(../../img/icons/logo-white/vk-logo.svg);
+}
+footer .button.yt {
+  background-image: url(../../img/icons/logo-white/yt-logo.svg);
+}
+
+.button:hover:not(.in-text):not(:active) {
+  transform: scale(1.05, 1.05);
+  box-shadow: 0px 6px 12px -6px var(--shadow-button-color);
+  opacity: 100%;
+}
+
+.button:empty:hover:not(.in-text):not(:active) {
+  transform: scale(1.1, 1.1);
+}
+
+.button:active {
+  transition: all 0.1s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transform: scale(1, 1);
+}

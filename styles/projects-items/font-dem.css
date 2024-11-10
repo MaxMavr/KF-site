@@ -1,0 +1,45 @@
+.font-demonstration-container {
+  display: flex;
+  gap: 20px;
+}
+
+.font-demonstration {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: var(--bg-accent-color);
+}
+
+.font-demonstration .font-name {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.font-demonstration p {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  width: auto;
+  
+  -webkit-mask: linear-gradient(to right black 70%, transparent 100%);
+  mask: linear-gradient(to right black 70%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  background: linear-gradient(to right, var(--txt-color) 70%, transparent 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.font-demonstration-container + .font-demonstration-container {
+  margin-top: -20px;
+}

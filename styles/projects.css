@@ -1,0 +1,74 @@
+@import url(projects-items/color-dem.css);
+@import url(projects-items/img-dem.css);
+@import url(projects-items/logo-dem.css);
+@import url(projects-items/font-dem.css);
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-end;
+
+  width: 80%;
+  max-width: 1600px;
+  column-gap: 80px;
+  margin: 80px auto 0 auto;
+}
+
+header > div {
+  display: grid;
+  align-content: space-between;
+  height: inherit;
+  gap: 12px;
+}
+
+header > div > *:last-child {
+  margin-bottom: 30px;
+}
+
+header > div > *:first-child {
+  margin-top: 18px;
+}
+
+header .button:empty {
+  opacity: 60%;
+}
+
+.project-footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 20px;
+  width: 100%;
+  margin-top: 40px;
+  padding: 0 10px;
+}
+
+.project-footer :last-child {
+  text-align: right;
+  margin-left: auto;
+}
+
+@media (max-width: 800px) {
+  header .button-container {
+    flex-wrap: wrap;
+  }
+
+  .logo-demonstration .small {
+    flex: 0 0 100%;
+  }
+
+  .logo-demonstration div {
+    padding: 10px;
+  }
+
+  .font-demonstration-container {
+    flex-direction: column;
+  }
+
+  .poster-demonstration-container {
+    grid-template-columns: 1fr;
+  }
+}

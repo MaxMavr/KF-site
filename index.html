@@ -21,14 +21,13 @@
     <link rel="stylesheet" type="text/css" href="styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="styles/base.css" />
     <link rel="stylesheet" type="text/css" href="styles/header.css" />
-    <link rel="stylesheet" type="text/css" href="styles/grids.css" />
-    <link rel="stylesheet" type="text/css" href="styles/pop-up.css" />
+    <link rel="stylesheet" type="text/css" href="styles/projects-grid.css" />
   </head>
 
   <body>
     <header>
       <div class="header-container">
-        <a class="logo-header" href="#">
+        <a class="logo-header" href="/">
           <div class="logo-cube">
             <div class="cube">
               <div class="side front"></div>
@@ -66,107 +65,131 @@
     <div class="header-plug"></div>
 
     <main>
-      <h1>Портфолио</h1>
+      <h1 id="p">Портфолио</h1>
 
       <p>
         Большинство работ, собранное в&nbsp;удобные кейсы.
         <br />
-        Дополните&nbsp;его —&nbsp;<strong>закажите себе</strong>
+        Дополните&nbsp;его&nbsp;&mdash; закажите себе
+        <br />
+        <span class="minor"
+          >Это <b>Альфа</b> версия сайта. Для того чтобы посмотреть все страницы
+          <a href="all-pages.html" class="hlink">тыкайте сюда</a>
+        </span>
       </p>
 
       <div class="grid-container">
         <article
           class="s4x2"
-          style="background-image: url(cases/morfin/img/cover.webp)"
+          style="background-image: url(projects/morfin/img/cover.webp)"
         >
-          <a class="white" href="cases/morfin/morfin.html" target="_blank">
+          <a href="projects/morfin/index.html" target="_blank">
             <h3>Morfin Sans</h3>
             <p class="minor">Шрифт &bull; Логотип &bull; Секс</p>
           </a>
-          <a href="cases/morfin/morfin.html"></a>
+          <a href="projects/morfin/index.html"></a>
         </article>
 
-        <article
-          class="s2x2 paragraph"
-          style="
-            background-image: url(img/art/video.svg);
-            background-size: 120%;
-            background-position: 75% 75%;
-          "
-        >
+        <article class="s2x2 paragraph">
           <h3>Шоурил</h3>
           <p>Тоже портфолио, но увлекательнее</p>
+          <object
+            style="width: 150%; top: 40%; left: 45%"
+            type="image/svg+xml"
+            data="other-pages/showreel/img/cover.svg"
+          ></object>
           <div class="button-container">
-            <a href="" class="button black">Посмотреть</a>
+            <a href="other-pages/showreel/index.html" class="button colored"
+              >Посмотреть</a
+            >
             <p class="minor">Может быть громко</p>
           </div>
         </article>
 
         <article
           class="s1x1"
-          style="background-image: url(cases/melectron/img/cover.webp)"
+          style="background-image: url(projects/melectron/img/cover.svg)"
         >
-          <a href="cases/melectron/melectron.html"></a>
+          <a href="projects/melectron/index.html"></a>
         </article>
 
         <article
           class="s1x1"
-          style="background-image: url(cases/melectron/img/cover.webp)"
+          style="background-image: url(projects/melectron/img/cover.webp)"
         >
-          <a href="cases/melectron/melectron.html"></a>
+          <a href="projects/melectron/index.html"></a>
         </article>
 
         <article
           class="s2x1"
-          style="background-image: url(cases/default/img/Bottle_mockup.png)"
+          style="background-image: url(projects/default/img/Bottle_mockup.png)"
         >
-          <a
-            class="white"
-            href="cases/melectron/melectron.html"
-            target="_blank"
-          >
+          <a href="projects/melectron/melectron.html" target="_blank">
             <h3>Заглушка очка</h3>
-            <p class="minor">Айдентика &bull; Логотип &bull; Дашка-лягушка &bull; Секс</p>
+            <p class="minor">
+              Айдентика &bull; Логотип &bull; Дашка-лягушка &bull; Секс
+            </p>
           </a>
-          <a href="cases/melectron/melectron.html"></a>
+          <a href="projects/melectron/melectron.html"></a>
         </article>
 
         <article
           class="s2x2"
-          style="background-image: url(cases/melectron/img/cover.webp)"
+          style="background-image: url(projects/melectron/img/cover.webp)"
         >
-          <a
-            class="white"
-            href="cases/melectron/melectron.html"
-            target="_blank"
-          >
+          <a href="projects/melectron/melectron.html" target="_blank">
             <h3>Melectron</h3>
             <p class="minor">Шрифт</p>
           </a>
-          <a href="cases/melectron/melectron.html"></a>
+          <a href="projects/melectron/melectron.html"></a>
         </article>
 
-        <article
-          class="s4x2 paragraph"
-          style="
-            background-image: url(img/art/personal.svg);
-            background-size: 120%;
-          "
-        >
+        <article class="s4x2 paragraph">
           <h3>Личные проекты</h3>
           <p>Это тоже интересно, если понравилось</p>
+          <object
+            style="width: 120%; top: 10%;"
+            type="image/svg+xml"
+            data="other-pages/personal/img/cover.svg"
+          ></object>
           <div class="button-container">
-            <a href="" class="button black">Посмотреть</a>
-            <p class="minor">Аккуратно откровенно</p>
+            <a href="other-pages/personal/index.html" class="button"
+              >Посмотреть</a
+            >
+            <p class="minor">Аккуратно, откровенно</p>
+          </div>
+        </article>
+
+        <article class="s2x2 paragraph">
+          <h3>Резюме</h3>
+          <p>Если всё понравилось</p>
+          <object
+          style="width: 120%; top: 30%;"
+            type="image/svg+xml"
+            data="other-pages/resume/img/cover.svg"
+          ></object>
+          <div class="button-container">
+            <a href="other-pages/resume/index.html" class="button">Прочитать</a>
+            <p class="minor">И пригласить поработать</p>
           </div>
         </article>
       </div>
+
+      <p style="text-align: center">
+        И-и-и <br />Мы&nbsp;закончили.<br />
+        Спасибо, что&nbsp;посмотрели.<br />
+        Выходы находятся по&nbsp;обе&nbsp;стороны комнаты.<br />
+        Пока!<br />
+        <span class="minor">
+          Если что-то не&nbsp;кликается, напишите &mdash;&nbsp;исправлю
+        </span>
+      </p>
     </main>
 
     <div class="pop-up-container"></div>
 
     <footer>
-      <a class="logo-footer" href="#"></a>
+      <a class="logo-footer" href="/"></a>
       <p class="copyright minor white">
         Оригинальные авторские&nbsp;права
         <br />
@@ -181,6 +204,7 @@
       </div>
     </footer>
 
+    <script src="scripts/lang&theme.js"></script>
     <script src="scripts/header.js"></script>
     <script src="scripts/logo-cube.js"></script>
     <script src="scripts/hlink.js"></script>

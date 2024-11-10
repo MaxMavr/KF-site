@@ -1,0 +1,133 @@
+@import url(base-items/colors.css);
+
+.bg {
+  opacity: 0;
+}
+
+.mjl, .mnl, .d, .dl, .logo, .logo-draft {
+  transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+}
+
+.mjl, .mnl, .dl {
+  stroke-width: 1;
+  fill: none;
+  stroke: var(--draft-color);
+  stroke-miterlimit: 10;
+}
+
+.mjl, .mnl {
+  stroke-dasharray: 2500;
+  stroke-dashoffset: 2500;
+}
+
+.mjl {
+  opacity: 0.5;
+}
+
+.mnl {
+  opacity: 0.13;
+}
+
+.dl {
+  opacity: 0;
+  stroke-dasharray: 12;
+  animation: tm linear 30s infinite;
+}
+
+.d {
+  opacity: 0;
+  fill: url(#d);
+}
+
+.logo {
+  opacity: 1;
+  fill: var(--draft-color);
+}
+
+.h{
+  stroke: var(--draft-color);
+  stroke-width: 2;
+}
+
+#dot {
+  fill: var(--draft-color);
+}
+
+.logo-draft{
+  stroke-width: 1;
+  fill: var(--draft-color);
+  stroke: var(--draft-color);
+  stroke-miterlimit: 10;
+
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+
+.main.w {
+  .mjl, .mnl, .dl {
+    stroke: var(--draft-invert-color);
+  }
+
+  .logo {
+    fill: var(--draft-invert-color);
+  }
+
+  .logo-draft{
+    fill: var(--draft-invert-color);
+    stroke: var(--draft-invert-color);
+  }
+
+  .h{
+    stroke: var(--draft-invert-color);
+  }
+}
+
+.main.wb {
+  .mjl, .mnl, .dl {
+    stroke: var(--draft-invert-color);
+  }
+
+  .logo-draft{
+    fill: var(--draft-invert-color);
+    stroke: var(--draft-invert-color);
+    fill-opacity: 1;
+  }
+
+  .h{
+    stroke: var(--draft-invert-color);
+  }
+
+  #dot {
+    fill: var(--draft-invert-color);
+  }
+}
+
+.main:hover {
+  .mjl,
+  .mnl {
+    stroke-dashoffset: 0;
+  }
+
+  .dl,
+  .d {
+    opacity: 0.13;
+  }
+
+  .logo {
+    opacity: 0;
+  }
+
+  .logo-draft {
+    fill-opacity: 0.13;
+    stroke-opacity: 0.5;
+  }
+}
+
+@keyframes tm {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1000;
+  }
+}

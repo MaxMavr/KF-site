@@ -1,0 +1,88 @@
+@import url(../../../styles/base-items/colors.css);
+
+.mj,
+.mn,
+.d,
+.c,
+.cl,
+.l {
+  transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+}
+
+.mj,
+.mn,
+.d,
+.cl {
+  fill: none;
+  stroke: var(--draft-color);
+  stroke-width: 4;
+}
+
+.mj {
+  opacity: 0.5;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+
+.mn {
+  opacity: 0.13;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+
+.d {
+  opacity: 0;
+  stroke-miterlimit: 30;
+  stroke-dasharray: 36;
+  animation: stroke-movement linear 15s infinite;
+}
+
+.c {
+  fill: var(--draft-color);
+  opacity: 1;
+}
+
+.cl {
+  opacity: 0;
+  stroke-miterlimit: 10;
+}
+
+.l {
+  fill: var(--draft-color);
+  opacity: 0;
+  font-family: "Noah-Regular";
+  font-size: 50px;
+  text-anchor: middle;
+}
+
+.letter:hover {
+  .mj {
+    stroke-dashoffset: 0;
+  }
+  .mn {
+    stroke-dashoffset: 0;
+  }
+  .d {
+    opacity: 0.13;
+  }
+  .l {
+    opacity: 0.5;
+  }
+  .c {
+    opacity: 0.25;
+  }
+  .cl {
+    opacity: 1;
+  }
+}
+
+@keyframes stroke-movement {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1000;
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+	style="fill:none;stroke:#f2f3f5;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:96;stroke-dashoffset:96;">
+	<style type="text/css">
+		.a {animation: sm .7s cubic-bezier(0.75, 0.35, 0.4, 0.99) .5s forwards;}
+		.b {animation: sm .8s cubic-bezier(0.75, 0.35, 0.4, 0.99) forwards;}
+		@keyframes sm {0%{stroke-dasharray:96;stroke-dashoffset:96;}100%{stroke-dashoffset: 0;}}
+	</style>
+	<g class="b">
+		<polyline class="b" points="20,12 20,22 4,22 4,12 " />
+		<rect class="b" x="2" y="7" width="20" height="5" />
+	</g>
+	<g class="a">
+		<line x1="12" y1="7" x2="12" y2="22" />
+		<path d="M12,7H7.5C6.1,7,5,5.9,5,4.5S6.1,2,7.5,2C11,2,12,7,12,7z" />
+		<path d="M12,7h4.5C17.9,7,19,5.9,19,4.5S17.9,2,16.5,2C13,2,12,7,12,7z" />
+	</g>
+</svg>

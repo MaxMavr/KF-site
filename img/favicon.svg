@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
 <style type="text/css">
 	.s1{fill:#FF6433;}
 	.s2{fill:#414271;}
@@ -12,7 +11,7 @@
 </style>
 <rect class="s1" x="8" width="8" height="8"/>
 <rect class="s2" x="8" width="8" height="4"/>
-<rect class="s3" x="8" y="8"  width="8" height="8"/>
+<rect class="s3" x="8" y="8" width="8" height="8"/>
 <path class="s4" d="M8,0v8H0C4.42,8,8,4.42,8,0z"/>
 <path class="s5" d="M8,0c0,4.42-3.58,8-8,8V0H8z"/>
 <path class="s6" d="M0,8h8v8C8,11.58,4.42,8,0,8z"/>

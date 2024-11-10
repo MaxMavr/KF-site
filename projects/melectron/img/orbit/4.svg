@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 2400 1150">
+	<style type="text/css">
+		.st0{opacity:0.2;fill:url(#a)}
+		.ball{fill:url(#b); animation: big 10s infinite linear;}
+		@keyframes big {0%{transform: scale(1.25)}25%{transform: scale(1.5)}50%{transform:
+		scale(1.25)}75%{transform: scale(1)}100%{transform: scale(1.25)}}
+
+	</style>
+
+	<linearGradient id="a" gradientUnits="userSpaceOnUse" x1="1148.5292" y1="-258.511"
+		x2="3380.2991" y2="-258.511"
+		gradientTransform="matrix(0.2624 -0.4598 0.8478 0.4839 795.8904 1696.3751)">
+		<stop offset="0" style="stop-color:#D54736" />
+		<stop offset="1" style="stop-color:#DFA93F" />
+	</linearGradient>
+
+	<path class="st0"
+		d="M1470.1,1057.8c625.1,37,997.8-169.2,832.5-460.7C2137.4,305.7,1496.7,39.4,871.7,2.4S-126.1,171.6,39.2,463.1
+	C204.4,754.5,845.1,1020.8,1470.1,1057.8z M1076.6,105.7c469.4,27.8,950.6,227.8,1074.7,446.7c124.1,218.9-155.8,373.8-625.3,346
+	c-469.4-27.8-950.6-227.8-1074.7-446.7C327.3,232.8,607.2,77.9,1076.6,105.7z" />
+
+	<radialGradient id="b" cx="3755.7126" cy="3036.9919" r="99.3779"
+		gradientTransform="matrix(-0.729 0.6846 -0.5797 -0.6173 4532.2422 -734.9962)"
+		gradientUnits="userSpaceOnUse">
+		<stop offset="0" style="stop-color:#BDE2EB" />
+		<stop offset="0.3728" style="stop-color:#BBE1EA" />
+		<stop offset="0.5312" style="stop-color:#B4DBE7" />
+		<stop offset="0.6489" style="stop-color:#A7D2E2" />
+		<stop offset="0.7466" style="stop-color:#96C6DB" />
+		<stop offset="0.8317" style="stop-color:#7FB5D1" />
+		<stop offset="0.9082" style="stop-color:#62A0C6" />
+		<stop offset="0.9766" style="stop-color:#4189B8" />
+		<stop offset="1" style="stop-color:#347FB3" />
+	</radialGradient>
+
+	<circle class="ball" cx="0" cy="0" r="75">
+		<animateMotion
+			dur="10s"
+			repeatCount="indefinite"
+			path="M1497.62,976.26c554.37,32.27,884.9-147.56,738.3-401.77C2089.41,320.36,1521.21,88.12,966.93,55.85
+	s-884.9,147.56-738.3,401.77C375.13,711.75,943.34,943.99,1497.62,976.26z" />
+	</circle>
+</svg>

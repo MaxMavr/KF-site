@@ -1,4 +1,11 @@
-colorArray = ['#9943e2', '#5646ff', '#ff9e33', '#ff6433', '#ff4267'];
+const colorArray = [
+    'var(--highlight-o-color)',
+    'var(--highlight-r-color)', 
+    'var(--highlight-p-color)', 
+    'var(--highlight-b-color)', 
+    'var(--highlight-y-color)'
+];
 
-document.documentElement.style.setProperty('--link-color',
-    colorArray[Math.floor(Math.random() * colorArray.length)]);
+const randomColor = colorArray[Math.floor(Math.random() * colorArray.length)]
+
+document.documentElement.style.setProperty('--link-color', randomColor);

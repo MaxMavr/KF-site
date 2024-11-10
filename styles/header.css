@@ -27,7 +27,7 @@ header {
   align-items: center;
   position: fixed;
   inset: 0;
-  background: #231f20;
+  background: var(--black);
   z-index: 30;
 }
 
@@ -64,8 +64,6 @@ header {
   cursor: pointer;
   left: 50%;
   bottom: 20px;
-  filter: invert(95%) sepia(0%) saturate(7487%) hue-rotate(97deg)
-    brightness(108%) contrast(98%);
   height: 6vh;
   animation: happened 1.5s alternate infinite cubic-bezier(0.6, 0, 0.4, 1);
 }
@@ -108,7 +106,6 @@ header {
 .narrow .header-container .hlink {
   display: block;
   position: relative;
-  opacity: 60%;
 }
 
 .narrow .header-container .mail {
@@ -116,6 +113,10 @@ header {
 }
 
 @media (max-width: 800px) {
+  .header-container{
+    width: 80%;
+  }
+  
   .narrow .header-container .hlink {
     display: none;
   }

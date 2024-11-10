@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 669.7 200" style="enable-background:new 0 0 669.7 200;" xml:space="preserve">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669.7 200">
 <style type="text/css">
 	.s1{fill:#FF6433;}
 	.s2{fill:#414271;}
@@ -9,7 +8,7 @@
 	.s5{fill:#1BCEC4;}
 	.s6{fill:#5646FF;}
 	.s7{fill:#FF9E33;}
-	.s8{fill:#FFFFFF;}
+	.s8{fill:#f2f3f5;}
 </style>
 
 <rect class="s1" x="100" width="100" height="100"/>

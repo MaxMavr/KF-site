@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 210">
+	<style type="text/css">
+		@import url("../../../styles/base-items/colors.css");
+
+		.s0,.s1,.s2,.s3,.s4,.s5,.s6{
+		fill:none;
+		stroke:var(--draw-color);
+		stroke-width:10;
+		stroke-linecap:round;
+		stroke-linejoin:round;
+		stroke-miterlimit:1;
+		stroke-dasharray:2000;
+		stroke-dashoffset:2000;}
+
+		.s0{transform: scale(1.5, 0.5); animation: m0 10s cubic-bezier(0.75, 0.35, 0.4, 0.99)
+		infinite alternate;}
+		.s1{transform: scale(1.5, 0.5); animation: m1 10s cubic-bezier(0.75, 0.35, 0.4, 0.99)
+		infinite alternate;}
+		.s2{transform: scale(1.5, 0.5); animation: m2 10s cubic-bezier(0.75, 0.35, 0.4, 0.99)
+		infinite alternate;}
+		.s3{transform: scale(1.5, 0.5) translateX(2px); animation: m3 10s cubic-bezier(0.75, 0.35,
+		0.4, 0.99) infinite alternate;}
+		.s4{transform: scale(1.5, 0.5); animation: m4 10s cubic-bezier(0.75, 0.35, 0.4, 0.99)
+		infinite alternate;}
+		.s5{transform: scale(1.5, 0.5); animation: m5 10s cubic-bezier(0.75, 0.35, 0.4, 0.99)
+		infinite alternate;}
+		.s6{transform: scale(1.5, 0.5); animation: m6 10s cubic-bezier(0.75, 0.35, 0.4, 0.99)
+		infinite alternate;}
+
+		@keyframes m0 {
+		5%{stroke-dashoffset:2000;}
+		25%{stroke-dashoffset:0;}
+		100%{stroke-dashoffset:0;}
+		}
+		@keyframes m1 {
+		16%{stroke-dashoffset:2000;}
+		35%{stroke-dashoffset:0;}
+		100%{stroke-dashoffset:0;}
+		}
+		@keyframes m2 {
+		19%{stroke-dashoffset:2000;}
+		40%{stroke-dashoffset:0;}
+		100%{stroke-dashoffset:0;}
+		}
+		@keyframes m3 {
+		25%{stroke-dashoffset:2000;}
+		45%{stroke-dashoffset:0;}
+		100%{stroke-dashoffset:0;}
+		}
+		@keyframes m4 {
+		27%{stroke-dashoffset:2000;}
+		42%{stroke-dashoffset:0;}
+		100%{stroke-dashoffset:0;}
+		}
+		@keyframes m5 {
+		29%{stroke-dashoffset:2000;}
+		43%{stroke-dashoffset:0;}
+		100%{stroke-dashoffset:0;}
+		}
+		@keyframes m6 {
+		31%{stroke-dashoffset:2000;}
+		44%{stroke-dashoffset:0;}
+		100%{stroke-dashoffset:0;}
+		}
+	</style>
+	<path class="s0"
+		d="M7.12,17.14C30.11,135.16,44.66,257.1,50.44,380.03C31.42,314.78,20.97,243.6,19.89,172.04
+		c-0.55-36.36,1.47-73.8,11.72-106.54c4.27-13.64,10.03-26.43,17.83-35.6s17.8-14.43,27.5-12.32c16.39,3.57,28.59,27.81,31.12,53.11
+		s-2.81,51.02-10.28,73.87c-14.7,44.98-37.4,82.29-59.8,118.91" />
+	<path class="s1"
+		d="M62.51,287.46c9.04-8.04,16.25-20.94,20.07-35.94c1.62-6.37,2.22-15.04-1.49-18.77
+		c-2.88-2.9-6.76-0.99-9.67,1.83c-11.14,10.78-15.99,32.51-16.2,52.83c-0.06,6.21,0.37,12.98,3.13,17.5
+		c2.86,4.69,7.63,5.64,11.63,3.79c4-1.85,7.36-6.04,10.38-10.48c3.02-4.45,5.85-9.28,9.31-12.9" />
+	<path class="s2"
+		d="M90.84,257.05c2.28-14.75,6.4-28.81,12.08-41.17c0.94-2.05,2.14-4.24,3.76-4.37c2.83-0.23,4.05,5.44,4.18,9.81
+		c0.61,19.92-2.57,40.09-9.04,57.34c0.67-4.53,1.39-9.23,3.24-12.9c1.85-3.67,5.16-6.02,7.93-4.22c2.85,1.85,4.02,7.05,4.7,11.72
+		c5.54,38.38-0.91,78.2-7.33,116.25c-1.24,7.35-3.22,15.9-7.97,17.81c-2.69,1.08-5.63-0.49-7.72-3.32s-3.42-6.79-4.33-10.85
+		c-3.86-17.42-0.33-36.66,4.55-53.46c7.96-27.42,23.16-86.99,43.44-106.21" />
+	<path class="s3" d="M118.06,204.01c6.03,25.18,9.22,51.97,9.39,78.81" />
+	<path class="s4"
+		d="M137.61,221.87c0.18,9.19,1.3,18.34,3.29,27c0.69,3,1.65,6.21,3.55,7.46c1.62,1.07,3.56,0.35,4.98-1.25
+		c1.42-1.6,2.41-3.96,3.23-6.37c4.15-12.25,4.55-27.39,1.06-40.12c-1.37-5.02-3.52-9.93-6.78-11.96c-3.27-2.04-7.74,0.07-8.73,5.3"
+	/>
+	<path class="s5"
+		d="M163.65,219.62c0.05,7.65,1.11,15.28,3.09,22.28c0.53,1.89,1.24,3.89,2.49,4.61c2.47,1.45,4.65-2.92,5.7-6.67
+		c5.83-20.72,8.16-43.77,6.7-66.25c1.62,15.95,3.24,31.9,4.86,47.85c0.3,2.96,0.97,6.55,2.87,7.13c2.49,0.76,3.88-4.23,4.3-8.09
+		c2.18-19.76,4.35-39.52,6.53-59.28c0.94,20.18,1.89,40.35,2.83,60.53" />
+	<path class="s6"
+		d="M209.23,193.54c9.88-11.54,18.23-26.21,24.39-42.82c1.34-3.63,2.61-7.46,2.88-11.62
+		c0.27-4.16-0.65-8.74-2.91-11.05c-2.37-2.42-5.65-1.76-8.04,0.6c-2.39,2.36-4.06,6.11-5.49,9.9c-6.8,18.12-9.5,39.83-7.55,60.55
+		c0.56,5.95,1.76,12.42,5.04,15.64c2.89,2.83,6.73,2.33,9.83,0.08c3.1-2.25,5.61-5.99,8.09-9.64
+		c30.33-44.63,63.97-83.88,100.04-116.74" />
+</svg>

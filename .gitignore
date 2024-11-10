@@ -1,2 +1,5 @@
 TEST/
 *.txt
+*.mp4
+.vscode/
+download-res/

@@ -1,0 +1,57 @@
+.link-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.link-container > a:not([href]){
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.link-container > a {
+  display: flex;
+  gap: 24px;
+  padding: 20px;
+  border-radius: 20px;
+  align-items: flex-start;
+}
+
+.link-container > a div {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.link-container > a {
+  transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  text-decoration: none;
+  color: var(--txt-color);
+}
+
+.link-container > a:hover {
+  background-color: var(--bg-accent-color);
+}
+
+.link-container img,
+.link-container object {
+  height: 48px;
+  aspect-ratio: 1;
+  pointer-events: none;
+  border-radius: 12px;
+}
+
+@media (max-width: 1200px) {
+  .link-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .link-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .link-container > a {
+    flex-direction: column;
+  }
+}

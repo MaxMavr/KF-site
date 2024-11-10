@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+<style type="text/css">@import url("../../letters.css");</style>
+
+<g class="letter">
+	<rect width="1000" height="1000" opacity="0"/>
+	<g class="mj">
+		<line x1="500" y1="175" x2="0" y2="175"/>
+		<line x1="500" y1="175" x2="1000" y2="175"/>
+		<line x1="500" y1="275" x2="0" y2="275"/>
+		<line x1="500" y1="275" x2="1000" y2="275"/>
+		<line x1="500" y1="725" x2="0" y2="725"/>
+		<line x1="500" y1="725" x2="1000" y2="725"/>
+		<line x1="500" y1="825" x2="0" y2="825"/>
+		<line x1="500" y1="825" x2="1000" y2="825"/>
+		
+		<line x1="475" y1="500" x2="475" y2="0"/>
+		<line x1="475" y1="500" x2="475" y2="1000"/>
+		<line x1="525" y1="500" x2="525" y2="0"/>
+		<line x1="525" y1="500" x2="525" y2="1000"/>
+	</g>
+
+	<g class="mn">
+		<line x1="500" y1="225" x2="0" y2="225"/>
+		<line x1="500" y1="225" x2="1000" y2="225"/>
+	</g>
+
+	<line class="d" x1="550" y1="0" x2="550" y2="1000"/>
+
+	<path class="c" d=" M475,175h50v50h-50V175z M475,275h50v450h-50V275z "/>
+
+	<path class="cl" d=" M475,175h50v50h-50V175z M475,275h50v450h-50V275z "/>
+
+	<text class="l" transform="matrix(1 0 0 1 500 875)"> i </text>
+</g>
+</svg>

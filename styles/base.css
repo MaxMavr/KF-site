@@ -1,7 +1,10 @@
-@import url("../fonts/font.css");
-@import url("button.css");
-@import url("hlink.css");
-@import url("footer.css");
+@import url("base-items/fonts/fonts.css");
+@import url("base-items/colors.css");
+
+@import url("base-items/button.css");
+@import url("base-items/hlink.css");
+@import url("base-items/footer.css");
+@import url("base-items/pop-up.css");
 
 * {
   touch-action: manipulation;
@@ -11,7 +14,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  color: #231f20;
+  color: var(--txt-color);
+  background-color: var(--bg-color);
   font-family: Noah, Arial, sans-serif;
   min-height: 100vh;
 }
@@ -22,6 +26,7 @@ main {
   flex-direction: column;
   width: 80%;
   max-width: 1600px;
+  min-height: 80vh;
   margin: 40px auto 80px auto;
 }
 
@@ -34,12 +39,18 @@ h2 {
 .minor {
   font-size: 20px;
   font-weight: normal;
+  opacity: 60%;
 }
 .white {
-  color: #fff;
+  color: var(--white);
 }
 .black {
-  color: #231f20;
+  color: var(--black);
+}
+
+.no-break {
+  white-space: nowrap;
+  vertical-align: baseline;
 }
 
 h1 {
@@ -49,7 +60,6 @@ h1 {
   font-size: 112px;
   vertical-align: baseline;
   line-height: 128px;
-  max-width: 60%;
 }
 
 h2 {
@@ -64,14 +74,14 @@ h3 {
 p:not([class]) {
   font-size: 32px;
 }
-p:not([class]) .fun {
+
+p .fun {
   opacity: 0;
   transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
-p:not([class]):hover {
-  .fun {
-    opacity: 100%;
-  }
+
+p:hover .fun {
+  opacity: 100%;
 }
 
 strong {
@@ -84,8 +94,14 @@ strong {
     line-height: 64px;
     max-width: 100%;
   }
-  main > p:not([class]) {
+
+  main > p:not([class]),
+  h2 {
     width: 100%;
+  }
+
+  p:not([class]) {
+    font-size: 24px;
   }
 }
 
@@ -94,9 +110,9 @@ body::-webkit-scrollbar {
   width: 3px;
 }
 body::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
+  background: var(--scrollbar-bg-color);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(35, 31, 32, 0.3);
+  background-color: var(--scrollbar-color);
   border-radius: 20px;
 }

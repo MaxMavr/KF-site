@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3183 1850">
+	<style type="text/css">
+		.d{opacity:0.2;fill:url(#a);}
+		.ball{fill:url(#b); animation: big 10s infinite linear;}
+		@keyframes big {0%{transform: scale(1.25)}25%{transform: scale(1.5)}50%{transform: scale(1.25)}75%{transform: scale(1)}100%{transform: scale(1.25)}}
+	</style>
+
+	<linearGradient id="a" gradientUnits="userSpaceOnUse"
+		x1="-1033.6833" y1="1988.3098"
+		x2="2235.0349" y2="178.7891"
+		gradientTransform="matrix(0.953 -0.3028 -0.3028 -0.953 1291.8398 2170.4751)">
+		<stop offset="0" style="stop-color:#D54736" />
+		<stop offset="1" style="stop-color:#DFA93F" />
+	</linearGradient>
+
+	<path class="d"
+		d="M1314.5,247.7C473.4,514.9-107.7,1049,16.8,1440.6C141.2,1832.2,924,1933,1765.1,1665.8
+	c841.2-267.3,1422.2-801.4,1297.8-1193C2938.4,81.2,2155.7-19.6,1314.5,247.7z M1812.5,1488.7
+	C1093.4,1717.2,424.2,1631,317.9,1296.2S708.2,504.8,1427.3,276.3S2815.6,134,2922,468.8S2531.6,1260.2,1812.5,1488.7z" />
+
+	<radialGradient id="b" cx="5519.2979" cy="-2959.5173" r="130.0552"
+		gradientTransform="matrix(-0.729 0.6846 0.5797 0.6173 5783.5039 -2002.1252)"
+		gradientUnits="userSpaceOnUse">
+		<stop offset="0" style="stop-color:#DDB161" />
+		<stop offset="0.3986" style="stop-color:#DBAF60" />
+		<stop offset="0.5679" style="stop-color:#D6A85D" />
+		<stop offset="0.6938" style="stop-color:#CC9B58" />
+		<stop offset="0.7982" style="stop-color:#BE8A51" />
+		<stop offset="0.8892" style="stop-color:#AB7348" />
+		<stop offset="0.9697" style="stop-color:#95573D" />
+		<stop offset="1" style="stop-color:#8B4A38" />
+	</radialGradient>
+
+	<circle class="ball" cx="0" cy="0" r="98.2">
+		<animateMotion
+			dur="10s"
+			repeatCount="indefinite"
+			path="M1796.4,1558.4C1014.9,1802.4,287.6,1710.3,172,1353S596.2,508.2,1377.8,264.3s1508.9-151.9,1624.5,205.5
+	C3118,827.1,2578,1314.5,1796.4,1558.4z" />
+	</circle>
+</svg>

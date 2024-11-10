@@ -1,6 +1,6 @@
 let counter = 0;
 const popUpButtons = document.querySelectorAll(".pop-up-button"),
-  popUpContainer = document.querySelector(".pop-up-container");
+      popUpContainer = document.querySelector(".pop-up-container");
 
 popUpButtons.forEach((button) => {
   if (button.dataset.mode == "copy") {

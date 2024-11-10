@@ -1,0 +1,64 @@
+:root {
+  /* Неизменяемые */
+  --highlight-o-color: #ff6433;
+  --highlight-r-color: #ff4267;
+  --highlight-p-color: #9943e2;
+  --highlight-g-color: #1bcec4;
+  --highlight-b-color: #5646ff;
+  --highlight-y-color: #ff9e33;
+  --highlight-d-color: #414271;
+
+  --black: #231f20;
+  --black-trans30: #231f204d;
+  --black-bg: #191717;
+  --black-draw-color: #2b2628;
+
+  --white: #f2f3f5;
+  --white-trans30: #f2f3f54d;
+  --white-bg: #fff;
+  --white-draw-color: #d7dbe5;
+
+  --black-shadow: #231f201a; /* 66; */
+  --white-shadow: #f1f2f41a; /* 1a; */
+
+  --scrollbar-bg-color: transparent;
+
+  /* Изменяемые */
+  --bg-color: var(--white-bg);
+  --bg-accent-color: var(--white);
+  --bg-accent-invert-color: var(--black);
+  --draw-color: var(--white-draw-color);
+
+  --txt-color: var(--black);
+
+  --shadow-color: var(--black-shadow);
+
+  --poster-bg: var(--white-trans30);
+  --scrollbar-color: #231f2066;
+  --link-color: var(--highlight-b-color); /* JS */
+}
+
+svg {
+  --draft-color: var(--black);
+  --draft-invert-color: var(--white);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: var(--black-bg);
+    --bg-accent-color: var(--black);
+    --bg-accent-invert-color: var(--white);
+    --draw-color: var(--black-draw-color);
+
+    --txt-color: var(--white);
+
+    --poster-bg: var(--black-trans30);
+    --shadow-color: var(--white-shadow);
+    --scrollbar-color: #f1f2f41a;
+  }
+
+  svg {
+    --draft-color: var(--white);
+    --draft-invert-color: var(--black);
+  }
+}

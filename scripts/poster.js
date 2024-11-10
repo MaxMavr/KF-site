@@ -1,19 +1,13 @@
-const popUpPosters = document.querySelectorAll(".poster-demonstration div"),
+const popUpPosters = document.querySelectorAll(".poster-demonstration img"),
   popupPosterContainer = document.querySelector(".pop-up-poster-container");
 
 popUpPosters.forEach((poster) => {
-  poster.onclick = () => {
-    popUpPosterCreate(
-      poster.style.backgroundImage.match(/url\(["'](.*)["']\)/)[1]
-    );
-  };
+  poster.addEventListener("click", () => popUpPosterCreate(poster.cloneNode(true)));
 });
 
-function popUpPosterCreate(path2img) {
-  let newPopup = document.createElement("div");
+function popUpPosterCreate(img) {
+  const newPopup = document.createElement("div");
   newPopup.classList.add("pop-up-poster-bg");
-  let img = document.createElement("img");
-  img.src = path2img;
   newPopup.appendChild(img);
 
   newPopup.onclick = () => {
@@ -26,5 +20,5 @@ function popUpPosterCreate(path2img) {
   popupPosterContainer.appendChild(newPopup);
   setTimeout(function () {
     newPopup.classList.add("isvisible");
-  }, 1);
+  }, 10);
 }

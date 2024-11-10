@@ -1,0 +1,34 @@
+.hlink {
+  transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  color: var(--link-color);
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: all;
+  cursor: pointer;
+}
+
+.hlink:hover {
+  opacity: 100%;
+}
+
+
+.hlink::after {
+  transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0;
+  height: 1.5px;
+  background: var(--link-color);
+  left: 50%;
+  transform: translate(-50%, -375%);
+}
+
+.hlink.minor::after {
+  transform: translate(-50%, -200%);
+}
+
+.hlink:hover:after {
+  width: 100%;
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 2220 1220">
+
+	<style type="text/css">
+		.st0{opacity:0.2;fill:url(#a);enable-background:new ;}
+		.ball1{fill:url(#b); animation: big 10s infinite linear;}
+		.ball2{fill:url(#c); animation: big 10s infinite linear;}
+		@keyframes big {
+		0%{transform: scale(1.25)}
+		25%{transform: scale(1.5)}
+		50%{transform: scale(1.25)}
+		75%{transform: scale(1)}
+		100%{transform: scale(1.25)}
+		}
+	</style>
+
+	<linearGradient id="a" gradientUnits="userSpaceOnUse" x1="9.8278" y1="751.6779" x2="2160.8733"
+		y2="751.6779" gradientTransform="matrix(0.9967 0.0817 0.0817 -0.9967 -34.525 1241.0209)">
+		<stop offset="0" style="stop-color:#D54736" />
+		<stop offset="1" style="stop-color:#DFA93F" />
+	</linearGradient>
+
+	<path class="st0"
+		d="M1261.6,974.2c606.4-235.6,1029.4-602.7,945-820.3C2122.1-63.4,1562-48.8,955.7,186.6s-1029.4,602.7-945,820.3
+	S655.3,1209.7,1261.6,974.2z M1130,200c455.4-176.9,876-187.9,939.4-24.5s-254.3,439.2-709.7,616s-876,187.9-939.4,24.5
+	S674.6,376.9,1130,200z" />
+
+	<radialGradient id="b" cx="2891.6384" cy="-727.56" r="66.2519"
+		gradientTransform="matrix(-0.729 0.6846 0.5797 0.6173 2552.3403 -1556.228)"
+		gradientUnits="userSpaceOnUse">
+		<stop offset="0" style="stop-color:#EEC9E0" />
+		<stop offset="0.3788" style="stop-color:#ECC7DF" />
+		<stop offset="0.5397" style="stop-color:#E6C0DB" />
+		<stop offset="0.6594" style="stop-color:#DCB3D3" />
+		<stop offset="0.7586" style="stop-color:#CDA2C9" />
+		<stop offset="0.8451" style="stop-color:#B98BBB" />
+		<stop offset="0.9225" style="stop-color:#A16EAB" />
+		<stop offset="0.9921" style="stop-color:#864D97" />
+		<stop offset="1" style="stop-color:#824995" />
+	</radialGradient>
+
+
+	<radialGradient id="c" cx="2891.6292" cy="-727.5234" r="66.2519"
+		gradientTransform="matrix(-0.729 0.6846 0.5797 0.6173 2552.3403 -1556.228)"
+		gradientUnits="userSpaceOnUse">
+		<stop offset="0" style="stop-color:#DFE7A6" />
+		<stop offset="0.3525" style="stop-color:#DDE6A5" />
+		<stop offset="0.5022" style="stop-color:#D6E4A3" />
+		<stop offset="0.6136" style="stop-color:#C9E0A0" />
+		<stop offset="0.7059" style="stop-color:#B8DA9A" />
+		<stop offset="0.7865" style="stop-color:#A1D294" />
+		<stop offset="0.8588" style="stop-color:#84C98B" />
+		<stop offset="0.925" style="stop-color:#62BD81" />
+		<stop offset="0.9847" style="stop-color:#3CB176" />
+		<stop offset="1" style="stop-color:#31AD73" />
+	</radialGradient>
+
+	<circle class="ball1" cx="0" cy="0" r="50">
+		<animateMotion
+			dur="10s"
+			repeatCount="indefinite"
+			path="M1268.58,260.7c470.24,218.78,797,528.8,729.76,692.46c-67.24,163.66-502.85,118.99-973.02-99.86
+	s-797-528.8-729.76-692.46S798.34,41.92,1268.58,260.7z" />
+	</circle>
+	<circle class="ball2" cx="0" cy="0" r="50">
+		<animateMotion
+			dur="10s"
+			repeatCount="indefinite"
+			path="M1278.27,907.94c535.87-212.28,909.66-543.05,835.08-739.12c-74.67-195.79-569.62-182.64-1105.4,29.46
+	S98.29,741.34,172.87,937.4S742.49,1120.13,1278.27,907.94z" />
+	</circle>
+</svg>

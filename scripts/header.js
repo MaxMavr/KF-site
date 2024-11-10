@@ -1,43 +1,38 @@
-let docElem = document.documentElement,
-	header = document.querySelector('header'),
-	plug = document.querySelector('.header-plug'),
-	scrollArrow = document.querySelector('#scroll-arrow'),
-	didScroll = false,
-	changeHeaderOn = 10;
+const header = document.querySelector('header'),
+	  plug = document.querySelector('.header-plug'),
+	  scrollArrow = document.querySelector('#scroll-arrow'),
+	  changeHeaderOn = 10;
 
-scrollArrow.onclick = () => {
+if (window.location.hash === '#narrow') {
+	smallScroll();
+}
+
+scrollArrow.onclick = smallScroll;
+
+
+function smallScroll(){
 	window.scrollBy({
 		top: 15,
-		behavior: 'smooth' // добавляет плавность прокрутки
+		behavior: 'smooth'
 	});
 }
 
-function listen() {
-	window.addEventListener('scroll',
-		function (event) {
-			if (!didScroll) {
-				didScroll = true;
-				setTimeout(scrollPage, 50);
-			}
-	}, false);
-}
-
-function scrollPage() {
-	let sy = getScrollY();
-	if (sy >= changeHeaderOn) {
+function narrowHeader() {
+	if (getScrollY() >= changeHeaderOn) {
 		header.classList.add('narrow');
 		plug.classList.add('narrow');
-		// setTimeout(scrollPage, 80);
-		// document.querySelector('.header-container').appendChild(button);
+
+		window.removeEventListener('scroll', onScroll, false);
 	}
-	// else {
-	// 	header.classList.remove('narrow');
-	// }
-	// didScroll = false;
+}
+
+function onScroll(event) {
+    setTimeout(narrowHeader, 50);
 }
 
 function getScrollY() {
 	return window.scrollY || document.documentElement.scrollTop;
 }
 
-listen();
+narrowHeader();
+window.addEventListener('scroll', onScroll, false);
