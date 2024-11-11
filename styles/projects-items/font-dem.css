@@ -11,6 +11,7 @@
   overflow: hidden;
   border-radius: 20px;
   padding: 20px;
+  background-color: #f2f3f5;
   background-color: var(--bg-accent-color);
 }
 
@@ -34,9 +35,11 @@
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 
+  background: linear-gradient(to right, #f2f3f5 70%, transparent 100%);
   background: linear-gradient(to right, var(--txt-color) 70%, transparent 100%);
   background-clip: text;
   -webkit-background-clip: text;
+  color: #00000000;
   color: transparent;
 }
 

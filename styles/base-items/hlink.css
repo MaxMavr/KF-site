@@ -1,5 +1,6 @@
 .hlink {
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  color: #5646ff;
   color: var(--link-color);
   position: relative;
   text-decoration: none;
@@ -20,6 +21,7 @@
   display: block;
   width: 0;
   height: 1.5px;
+  background: #5646ff;
   background: var(--link-color);
   left: 50%;
   transform: translate(-50%, -375%);

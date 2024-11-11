@@ -14,7 +14,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  color: #231f20;
   color: var(--txt-color);
+  background-color: #fff;
   background-color: var(--bg-color);
   font-family: Noah, Arial, sans-serif;
   min-height: 100vh;
@@ -42,9 +44,11 @@ h2 {
   opacity: 60%;
 }
 .white {
+  color: #f2f3f5;
   color: var(--white);
 }
 .black {
+  color: #231f20;
   color: var(--black);
 }
 
@@ -110,9 +114,12 @@ body::-webkit-scrollbar {
   width: 3px;
 }
 body::-webkit-scrollbar-track {
-  background: var(--scrollbar-bg-color);
+  background-color: #00000000;
+  background-color: transparent;
+  background-color: var(--scrollbar-bg-color);
 }
 body::-webkit-scrollbar-thumb {
+  background-color: #231f2066;
   background-color: var(--scrollbar-color);
   border-radius: 20px;
 }

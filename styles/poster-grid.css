@@ -13,6 +13,7 @@
 
 .poster-demonstration img {
   aspect-ratio: 1;
+  background-color: #f2f3f5;
   background-color: var(--bg-accent-color);
   cursor: pointer;
   width: 100%;
@@ -49,6 +50,7 @@
   backdrop-filter: blur(0);
   width: 100vw;
   height: 100vh;
+  background-color: #f2f3f54d;
   background-color: var(--poster-bg);
   opacity: 0;
   transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
@@ -71,7 +73,6 @@
 .pop-up-poster-bg.isvisible {
   backdrop-filter: blur(10px);
   opacity: 100%;
-  background-color: var(--poster-bg);
   transform: translate(0, 0);
 }
 

@@ -5,6 +5,7 @@ img.img-demonstration {
   max-width: 1920px;
   position: relative;
   transform: translate(-50%, 0);
+  background-color: #f2f3f5; 
   background-color: var(--bg-accent-color);
   left: 50%;
 }
