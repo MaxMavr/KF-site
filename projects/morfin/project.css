@@ -13,7 +13,7 @@ h1 {
 
 body {
   background: #221823;
-  color: var(--txt-color);
+  color: var(--white);
   overflow: hidden;
 }
 

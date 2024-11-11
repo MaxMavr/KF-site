@@ -7,6 +7,14 @@ const rad2deg = 180;
 
 let debounceTimeout;
 
+const sides = ['left', 'right', 'top', 'buttom'];
+
+sides.forEach(side => {
+  const sideDiv = document.createElement('div');
+  sideDiv.classList.add('side', side);
+  cube.appendChild(sideDiv);
+});
+
 function updateCubeRotation(event) {
   clearTimeout(debounceTimeout);
   

@@ -17,7 +17,7 @@ body {
 .nuqun-demonstration {
   font-family: nuqun, Arial, sans-serif;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 100%;
   margin: 0 auto 120px;
 }
@@ -42,13 +42,13 @@ body {
 
 @media (max-width: 1200) {
   .nuqun-demonstration {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 @media (max-width: 800px) {
   .nuqun-demonstration {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .preview {
