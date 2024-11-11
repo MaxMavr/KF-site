@@ -8,7 +8,6 @@
 .logo-demonstration div {
   display: flex;
   padding: 40px;
-  box-sizing: border-box;
   max-height: 100vh;
   position: relative;
 }

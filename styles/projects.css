@@ -36,7 +36,6 @@ header .button:empty {
 }
 
 .project-footer {
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   column-gap: 40px;
