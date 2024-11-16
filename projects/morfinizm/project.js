@@ -1,11 +1,13 @@
 let eyesRectCenter = [];
 const eyes = document.querySelectorAll("#eye");
 
-
 eyes.forEach((eye) => {
   const eyeRect = eye.getBoundingClientRect();
 
   eye.style.transition = "all .1s cubic-bezier(0.35, 0.36, 0.58, 0.98)";
+  eye.style.webkitTransition = "all .1s cubic-bezier(0.35, 0.36, 0.58, 0.98)";
+  eye.style.mozTransition = "all .1s cubic-bezier(0.35, 0.36, 0.58, 0.98)";
+  eye.style.msTransition = "all .1s cubic-bezier(0.35, 0.36, 0.58, 0.98)";
 
   eyesRectCenter.push({
     eye: eye,
@@ -23,16 +25,19 @@ function rotationEyes(el) {
 
     let angle = Math.atan2(offsetY, offsetX);
 
-    eyeRectCenter.eye.style.transform = `
-    translate(
+    const transformValue = `translate(
         ${Math.cos(angle) * eyeRectCenter.width * 1.5}px,
         ${Math.sin(angle) * eyeRectCenter.height * 1.5}px)
-        `;  
+    `;
+
+    eyeRectCenter.eye.style.transform = transformValue;
+    eyeRectCenter.eye.style.WebkitTransform = transformValue;
+    eyeRectCenter.eye.style.MozTransform = transformValue;
 
     if (Math.abs(offsetY) < 50 && Math.abs(offsetX) < 50) {
-      eyeRectCenter.eye.setAttribute('ry', '0');
+      eyeRectCenter.eye.setAttribute("ry", "0");
     } else {
-      eyeRectCenter.eye.setAttribute('ry', '5');
+      eyeRectCenter.eye.setAttribute("ry", "5");
     }
   });
 }

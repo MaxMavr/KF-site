@@ -1,5 +1,7 @@
 header {
   margin-top: 220px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 
@@ -11,39 +13,59 @@ h1 {
 }
 
 body {
+  background: -o-radial-gradient(
+    at top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(40, 20, 14, 1) 100%
+  );
   background: radial-gradient(
     at top,
     rgba(0, 0, 0, 1) 0%,
     rgba(40, 20, 14, 1) 100%
   );
+  color: #f2f3f5;
   color: var(--white);
   overflow: hidden;
 }
 
 .melectron-demonstration {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 80%;
   min-height: 100vh;
   margin: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-family: Melectron, Arial, sans-serif;
   color: #bee2eb;
   font-weight: normal;
   font-style: normal;
   font-size: 150px;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
   column-gap: 40px;
+  -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .melectron-demonstration span {
+  -webkit-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   vertical-align: baseline;
 }
 
 .melectron-demonstration span:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
   transform: scale(1.3);
 }
 
@@ -53,6 +75,8 @@ body {
   top: 50%;
   width: 100vw;
   max-height: 150%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: -1;
 }
@@ -82,7 +106,7 @@ body {
 }
 
 @media (max-width: 800px) {
-  .melectron-demonstration{
+  .melectron-demonstration {
     width: 100%;
   }
   .preview {

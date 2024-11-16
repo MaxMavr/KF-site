@@ -1,35 +1,50 @@
 .link-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 }
 
-.link-container > a:not([href]){
+.link-container > a:not([href]) {
   opacity: 0.3;
   pointer-events: none;
 }
 
 .link-container > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 24px;
   padding: 20px;
   border-radius: 20px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
 .link-container > a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .link-container > a {
+  -webkit-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   text-decoration: none;
+  color: #231f20;
   color: var(--txt-color);
 }
 
 .link-container > a:hover {
+  background-color: #f2f3f5;
   background-color: var(--bg-accent-color);
 }
 
@@ -43,15 +58,20 @@
 
 @media (max-width: 1200px) {
   .link-container {
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 800px) {
   .link-container {
-    grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .link-container > a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }

@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body,
 div,
@@ -78,12 +84,10 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
   font-size: 100%;
   vertical-align: baseline;
 }
+
 article,
 aside,
 details,
@@ -99,16 +103,18 @@ section {
 }
 
 body {
-  line-height: 1.2;
+  line-height: 1.5;
 }
 ol {
   padding-left: 1.4em;
   list-style: decimal;
 }
+
 ul {
   padding-left: 1.4em;
   list-style: square;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -123,5 +129,5 @@ input[type="reset"] {
   padding: 0;
   font: inherit;
   cursor: pointer;
-  outline: inherit;
+  outline: none;
 }

@@ -1,19 +1,32 @@
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 12px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 
   background: var(--black);
 
   max-width: 100%;
   padding: 20px;
+  -ms-flex-item-align: end;
   align-self: flex-end;
 }
 
 .footer-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   grid-gap: 12px;
 }
@@ -22,12 +35,20 @@ footer .hlink {
   opacity: 60%;
   height: 48px;
 
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 footer .hlink.minor::after {
+  -webkit-transform: translate(-50%, 460%);
+  -ms-transform: translate(-50%, 460%);
   transform: translate(-50%, 460%);
 }
 
@@ -37,6 +58,8 @@ footer .mail {
 
 footer .copyright {
   opacity: 2.5%;
+  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 footer .copyright:hover {
@@ -46,12 +69,15 @@ footer .copyright:hover {
 .logo-footer {
   height: 48px;
   aspect-ratio: 3.35;
+  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   opacity: 60%;
 }
 
 footer .logo-footer {
-  background: url(../../img/logo/logo-footer.svg) no-repeat center center / contain;
+  background: url(../../img/logo/logo-footer.svg) no-repeat center center /
+    contain;
 }
 
 footer .logo-footer:hover {
@@ -66,10 +92,15 @@ footer .logo-footer:hover {
   }
 
   footer .mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
   .footer-button-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
 }

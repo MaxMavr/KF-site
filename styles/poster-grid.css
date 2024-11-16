@@ -1,21 +1,32 @@
 .poster-demonstration-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
   column-gap: 20px;
   row-gap: 40px;
 }
 
 .poster-demonstration {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 10px;
 }
 
 .poster-demonstration img {
   aspect-ratio: 1;
+  background-color: #f2f3f5;
   background-color: var(--bg-accent-color);
   cursor: pointer;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -45,14 +56,24 @@
 }
 
 .pop-up-poster-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-backdrop-filter: blur(0);
   backdrop-filter: blur(0);
   width: 100vw;
   height: 100vh;
-  background-color: var(--poster-bg);
+  background-color: #f2f3f54d;
+  background-color: var(--poster-bg-color);
   opacity: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
 }
@@ -60,22 +81,33 @@
 .pop-up-poster-bg img {
   max-width: calc(100vw - 40px);
   max-height: calc(100vh - 40px);
+  -webkit-transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   opacity: 0;
+  -webkit-transform: translate(0, 10px);
+  -ms-transform: translate(0, 10px);
   transform: translate(0, 10px);
   z-index: 101;
   pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
 .pop-up-poster-bg.isvisible {
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   opacity: 100%;
-  background-color: var(--poster-bg);
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 
 .pop-up-poster-bg.isvisible img {
   opacity: 100%;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
   transform: translate(0, 0);
 }

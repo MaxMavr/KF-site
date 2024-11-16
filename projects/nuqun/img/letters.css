@@ -6,6 +6,8 @@
 .c,
 .cl,
 .l {
+  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
@@ -36,6 +38,7 @@
   opacity: 0;
   stroke-miterlimit: 30;
   stroke-dasharray: 36;
+  -webkit-animation: stroke-movement linear 15s infinite;
   animation: stroke-movement linear 15s infinite;
 }
 
@@ -75,6 +78,15 @@
   }
   .cl {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes stroke-movement {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1000;
   }
 }
 

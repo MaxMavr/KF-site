@@ -7,6 +7,7 @@
 @import url("base-items/pop-up.css");
 
 * {
+  -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 html {
@@ -14,7 +15,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  color: #231f20;
   color: var(--txt-color);
+  background-color: #fff;
   background-color: var(--bg-color);
   font-family: Noah, Arial, sans-serif;
   min-height: 100vh;
@@ -22,8 +25,13 @@ body {
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 80%;
   max-width: 1600px;
@@ -43,9 +51,11 @@ h2 {
   opacity: 60%;
 }
 .white {
+  color: #f2f3f5;
   color: var(--white);
 }
 .black {
+  color: #231f20;
   color: var(--black);
 }
 
@@ -78,6 +88,8 @@ p:not([class]) {
 
 p .fun {
   opacity: 0;
+  -webkit-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
@@ -111,9 +123,12 @@ body::-webkit-scrollbar {
   width: 3px;
 }
 body::-webkit-scrollbar-track {
-  background: var(--scrollbar-bg-color);
+  background-color: #00000000;
+  background-color: transparent;
+  background-color: var(--scrollbar-bg-color);
 }
 body::-webkit-scrollbar-thumb {
+  background-color: #231f2066;
   background-color: var(--scrollbar-color);
   border-radius: 20px;
 }

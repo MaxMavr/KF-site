@@ -5,62 +5,62 @@
 }
 
 @font-face {
-    font-family: Noah;
-    font-weight: bold;
-    src: url(Noah-Bold.ttf);
+  font-family: Noah;
+  font-weight: bold;
+  src: url(Noah-Bold.ttf);
 }
 
 @font-face {
-    font-family: Noah;
-    font-style: italic;
-    src: url(Noah-Italic.ttf);
+  font-family: Noah;
+  font-style: italic;
+  src: url(Noah-Italic.ttf);
 }
 
 @font-face {
-    font-family: Noah;
-    font-weight: bold;
-    font-style: italic;
-    src: url(Noah-Bold-Italic.ttf);
+  font-family: Noah;
+  font-weight: bold;
+  font-style: italic;
+  src: url(Noah-Bold-Italic.ttf);
 }
 
 @font-face {
-    font-family: Morfin;
-    src: url(MorfinSans-Regular.ttf);
+  font-family: Morfin;
+  src: url(MorfinSans-Regular.ttf);
 }
 
 @font-face {
-    font-family: Melectron;
-    src: url(Melectron-Regular.otf);
+  font-family: Melectron;
+  src: url(Melectron-Regular.otf);
 }
 
 @font-face {
-    font-family: Nuqun;
-    src: url(Nuqun-Regular.otf);
+  font-family: Nuqun;
+  src: url(Nuqun-Regular.otf);
 }
 
 @font-face {
-    font-family: Edwardian;
-    src: url(Edwardian-Script.ttf);
+  font-family: Edwardian;
+  src: url(Edwardian-Script.ttf);
 }
 
 @font-face {
-    font-family: Montserrat;
-    src: url(Montserrat-Regular.ttf);
+  font-family: Montserrat;
+  src: url(Montserrat-Regular.ttf);
 }
 
 @font-face {
-    font-family: Gilroy;
-    font-weight: lighter;
-    src: url(Gilroy-Light.otf);
+  font-family: Gilroy;
+  font-weight: lighter;
+  src: url(Gilroy-Light.otf);
 }
 
 @font-face {
-    font-family: Gilroy;
-    font-weight: bold;
-    src: url(Gilroy-ExtraBold.otf);
+  font-family: Gilroy;
+  font-weight: bold;
+  src: url(Gilroy-ExtraBold.otf);
 }
 
 @font-face {
-    font-family: Kosko;
-    src: url(Kosko-Bold.otf);
+  font-family: Kosko;
+  src: url(Kosko-Bold.otf);
 }
