@@ -4,8 +4,10 @@ img.img-demonstration {
   width: calc(100vw - 4px);
   max-width: 1920px;
   position: relative;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  background-color: #f2f3f5; 
+  background-color: #f2f3f5;
   background-color: var(--bg-accent-color);
   left: 50%;
 }
