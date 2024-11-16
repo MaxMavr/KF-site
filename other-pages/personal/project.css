@@ -11,11 +11,15 @@ header > object {
   pointer-events: none;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
 
 .two-columns {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 40px 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
@@ -26,8 +30,13 @@ header > object {
 }
 
 .two-columns > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -37,6 +46,7 @@ header > object {
   }
 
   .two-columns {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
