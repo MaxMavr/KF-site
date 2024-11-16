@@ -10,16 +10,15 @@
 
   --black: #231f20;
   --black-trans30: #231f204d;
+  --black-trans60: #231f2099;
   --black-bg: #191717;
   --black-draw-color: #2b2628;
 
   --white: #f2f3f5;
   --white-trans30: #f2f3f54d;
+  --white-trans60: #f2f3f599;
   --white-bg: #fff;
   --white-draw-color: #d7dbe5;
-
-  --black-shadow: #231f201a; /* 66; */
-  --white-shadow: #f1f2f41a; /* 1a; */
 
   --scrollbar-bg-color: transparent;
 
@@ -31,9 +30,8 @@
 
   --txt-color: var(--black);
 
-  --shadow-color: var(--black-shadow);
-
-  --poster-bg: var(--white-trans30);
+  --shadow-color: var(--white-trans60);
+  --poster-bg-color: var(--white-trans30);
   --scrollbar-color: #231f2066;
   --link-color: var(--highlight-b-color); /* JS */
 }
@@ -52,8 +50,8 @@ svg {
 
     --txt-color: var(--white);
 
-    --poster-bg: var(--black-trans30);
-    --shadow-color: var(--white-shadow);
+    --shadow-color: var(--black-trans60);
+    --poster-bg-color: var(--black-trans30);
     --scrollbar-color: #f1f2f41a;
   }
 

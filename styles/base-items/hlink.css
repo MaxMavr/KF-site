@@ -1,10 +1,14 @@
 .hlink {
+  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   color: #5646ff;
   color: var(--link-color);
   position: relative;
   text-decoration: none;
   white-space: nowrap;
+  -webkit-user-select: all;
+  -moz-user-select: all;
   user-select: all;
   cursor: pointer;
 }
@@ -13,8 +17,9 @@
   opacity: 100%;
 }
 
-
 .hlink::after {
+  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   position: absolute;
   content: "";
@@ -24,10 +29,14 @@
   background: #5646ff;
   background: var(--link-color);
   left: 50%;
+  -webkit-transform: translate(-50%, -375%);
+  -ms-transform: translate(-50%, -375%);
   transform: translate(-50%, -375%);
 }
 
 .hlink.minor::after {
+  -webkit-transform: translate(-50%, -200%);
+  -ms-transform: translate(-50%, -200%);
   transform: translate(-50%, -200%);
 }
 

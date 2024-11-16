@@ -1,44 +1,65 @@
 .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 12px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   z-index: 10;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .button {
   border-radius: 12px;
   padding: 12px 24px;
-  transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -webkit-transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 
   font-weight: bold;
   font-size: 20px;
 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
 
   --shadow-button-color: var(--shadow-color);
+  color: #231f20;
   color: var(--txt-color);
-  background: var(--draw-color);
+  background-color: #f2f3f5;
+  background-color: var(--bg-accent-color);
 
-  box-shadow: 0 3px 12px 0 var(--shadow-button-color);
+  -webkit-box-shadow: 0 0 0 0 var(#f2f3f599);
+  box-shadow: 0 0 0 0 var(#f2f3f599);
+  -webkit-box-shadow: 0 0 0 0 var(--shadow-button-color);
+  box-shadow: 0 0 0 0 var(--shadow-button-color);
 }
 
 .button.white {
+  color: #231f20;
   color: var(--black);
-  background: var(--white);
+  background-color: #f2f3f5;
+  background-color: var(--white);
   --shadow-button-color: var(--white-shadow);
 }
 .button.black {
+  color: #f2f3f5;
   color: var(--white);
-  background: var(--black);
+  background-color: #231f20;
+  background-color: var(--black);
   --shadow-button-color: var(--black-shadow);
 }
 .button.colored {
+  color: #f2f3f5;
   color: var(--white);
-  background: var(--link-color);
+  background-color: #5646ff;
+  background-color: var(--link-color);
   --shadow-button-color: var(--link-color);
 }
 
@@ -46,7 +67,7 @@
   height: 48px;
   aspect-ratio: 1;
   padding: 0;
-  background: transparent;
+  background-color: transparent;
   --shadow-button-color: transparent;
 }
 
@@ -54,39 +75,87 @@
   display: inline-block;
   height: 38px;
   vertical-align: sub;
+  -webkit-box-shadow: 0 0 12px 0 var(--shadow-button-color);
   box-shadow: 0 0 12px 0 var(--shadow-button-color);
 }
 
-.button.tg {background-image: url(../../img/icons/logo-black/tg-logo.svg);}
-.button.vk {background-image: url(../../img/icons/logo-black/vk-logo.svg);}
-.button.yt {background-image: url(../../img/icons/logo-black/yt-logo.svg);}
-.button.fontesk {background-image: url(../../img/icons/logo-black/fontesk-logo.svg);}
-.button.fontstorage {background-image: url(../../img/icons/logo-black/fontstorage-logo.svg);}
-.button.myskotom {background-image: url(../../img/icons/logo-black/myskotom-logo.svg);}
+.button.tg {
+  background-image: url(../../img/icons/logo-black/tg-logo.svg);
+}
+.button.vk {
+  background-image: url(../../img/icons/logo-black/vk-logo.svg);
+}
+.button.yt {
+  background-image: url(../../img/icons/logo-black/yt-logo.svg);
+}
+.button.fontesk {
+  background-image: url(../../img/icons/logo-black/fontesk-logo.svg);
+}
+.button.fontstorage {
+  background-image: url(../../img/icons/logo-black/fontstorage-logo.svg);
+}
+.button.myskotom {
+  background-image: url(../../img/icons/logo-black/myskotom-logo.svg);
+}
 
 @media (prefers-color-scheme: dark) {
-  .button.tg {background-image: url(../../img/icons/logo-white/tg-logo.svg);}
-  .button.vk {background-image: url(../../img/icons/logo-white/vk-logo.svg);}
-  .button.yt {background-image: url(../../img/icons/logo-white/yt-logo.svg);}
-  .button.fontesk {background-image: url(../../img/icons/logo-white/fontesk-logo.svg);}
-  .button.fontstorage {background-image: url(../../img/icons/logo-white/fontstorage-logo.svg);}
-  .button.myskotom {background-image: url(../../img/icons/logo-white/myskotom-logo.svg);}
-} 
+  .button.tg {
+    background-image: url(../../img/icons/logo-white/tg-logo.svg);
+  }
+  .button.vk {
+    background-image: url(../../img/icons/logo-white/vk-logo.svg);
+  }
+  .button.yt {
+    background-image: url(../../img/icons/logo-white/yt-logo.svg);
+  }
+  .button.fontesk {
+    background-image: url(../../img/icons/logo-white/fontesk-logo.svg);
+  }
+  .button.fontstorage {
+    background-image: url(../../img/icons/logo-white/fontstorage-logo.svg);
+  }
+  .button.myskotom {
+    background-image: url(../../img/icons/logo-white/myskotom-logo.svg);
+  }
+}
 
-.button.tg.black {background-image: url(../../img/icons/logo-black/tg-logo.svg);}
-.button.vk.black {background-image: url(../../img/icons/logo-black/vk-logo.svg);}
-.button.yt.black {background-image: url(../../img/icons/logo-black/yt-logo.svg);}
-.button.fontesk.black {background-image: url(../../img/icons/logo-black/fontesk-logo.svg);}
-.button.fontstorage.black {background-image: url(../../img/icons/logo-black/fontstorage-logo.svg);}
-.button.myskotom.black {background-image: url(../../img/icons/logo-black/myskotom-logo.svg);}
+.button.tg.black {
+  background-image: url(../../img/icons/logo-black/tg-logo.svg);
+}
+.button.vk.black {
+  background-image: url(../../img/icons/logo-black/vk-logo.svg);
+}
+.button.yt.black {
+  background-image: url(../../img/icons/logo-black/yt-logo.svg);
+}
+.button.fontesk.black {
+  background-image: url(../../img/icons/logo-black/fontesk-logo.svg);
+}
+.button.fontstorage.black {
+  background-image: url(../../img/icons/logo-black/fontstorage-logo.svg);
+}
+.button.myskotom.black {
+  background-image: url(../../img/icons/logo-black/myskotom-logo.svg);
+}
 
-.button.tg.white {background-image: url(../../img/icons/logo-white/tg-logo.svg);}
-.button.vk.white {background-image: url(../../img/icons/logo-white/vk-logo.svg);}
-.button.yt.white {background-image: url(../../img/icons/logo-white/yt-logo.svg);}
-.button.fontesk.white {background-image: url(../../img/icons/logo-white/fontesk-logo.svg);}
-.button.fontstorage.white {background-image: url(../../img/icons/logo-white/fontstorage-logo.svg);}
-.button.myskotom.white {background-image: url(../../img/icons/logo-white/myskotom-logo.svg);}
-
+.button.tg.white {
+  background-image: url(../../img/icons/logo-white/tg-logo.svg);
+}
+.button.vk.white {
+  background-image: url(../../img/icons/logo-white/vk-logo.svg);
+}
+.button.yt.white {
+  background-image: url(../../img/icons/logo-white/yt-logo.svg);
+}
+.button.fontesk.white {
+  background-image: url(../../img/icons/logo-white/fontesk-logo.svg);
+}
+.button.fontstorage.white {
+  background-image: url(../../img/icons/logo-white/fontstorage-logo.svg);
+}
+.button.myskotom.white {
+  background-image: url(../../img/icons/logo-white/myskotom-logo.svg);
+}
 
 .button.tg.colored {
   --shadow-button-color: rgba(40, 168, 232, 0.3);
@@ -130,7 +199,7 @@
   background-image: url(../../img/icons/program/pr.svg);
 }
 .button.ps {
-  --shadow-button-color:  rgba(0, 0, 38, 0.302);
+  --shadow-button-color: rgba(0, 0, 38, 0.302);
   background-image: url(../../img/icons/program/ps.svg);
 }
 .button.git {
@@ -167,16 +236,25 @@ footer .button.yt {
 }
 
 .button:hover:not(.in-text):not(:active) {
+  -webkit-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
   transform: scale(1.05, 1.05);
+  -webkit-box-shadow: 0px 6px 12px -6px var(--shadow-button-color);
   box-shadow: 0px 6px 12px -6px var(--shadow-button-color);
   opacity: 100%;
 }
 
 .button:empty:hover:not(.in-text):not(:active) {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
 
 .button:active {
+  -webkit-transition: all 0.1s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.1s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.1s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
   transform: scale(1, 1);
 }

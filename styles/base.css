@@ -7,6 +7,7 @@
 @import url("base-items/pop-up.css");
 
 * {
+  -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 html {
@@ -23,8 +24,13 @@ body {
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 80%;
   max-width: 1600px;
@@ -81,6 +87,8 @@ p:not([class]) {
 
 p .fun {
   opacity: 0;
+  -webkit-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
