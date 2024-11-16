@@ -14,29 +14,8 @@ header > object {
   transform: translate(-50%, 0);
 }
 
-.two-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.two-columns img {
-  pointer-events: none;
-  max-width: 100%;
-}
-
-.two-columns > div {
-  display: flex;
-  gap: 12px;
-  flex-direction: column;
-}
-
 @media (max-width: 800px) {
   header > object {
     width: 120vw;
-  }
-
-  .two-columns {
-    grid-template-columns: 1fr;
   }
 }

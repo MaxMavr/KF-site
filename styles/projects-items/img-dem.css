@@ -1,12 +1,9 @@
 video.video-demonstration,
 img.img-demonstration {
-  pointer-events: none;
-  width: calc(100vw - 4px);
-  max-width: 1920px;
-  position: relative;
-  transform: translate(-50%, 0);
+  width: 100vw;
+  background-color: #f2f3f5; 
   background-color: var(--bg-accent-color);
-  left: 50%;
+  align-self: center;
 }
 
 img.img-demonstration + img.img-demonstration,
