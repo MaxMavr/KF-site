@@ -72,6 +72,7 @@
 }
 
 .button.in-text {
+  cursor: default;
   display: inline-block;
   height: 38px;
   vertical-align: sub;
