@@ -11,6 +11,11 @@
   pointer-events: none;
 }
 
+.link-container.one-item {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .link-container > a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,6 +69,10 @@
 }
 
 @media (max-width: 800px) {
+  .link-container.one-item {
+    width: 100%;
+  }
+
   .link-container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
