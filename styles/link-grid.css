@@ -11,7 +11,7 @@
   pointer-events: none;
 }
 
-.link-container.one-item {
+.link-container.in-article {
   width: 80%;
   margin: 0 auto;
 }
@@ -69,7 +69,7 @@
 }
 
 @media (max-width: 800px) {
-  .link-container.one-item {
+  .link-container.in-article {
     width: 100%;
   }
 

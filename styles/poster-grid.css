@@ -111,3 +111,10 @@
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
 }
+
+@media (max-width: 800px) {
+  .poster-demonstration-container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}

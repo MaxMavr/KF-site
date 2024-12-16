@@ -28,6 +28,10 @@ body {
   overflow: hidden;
 }
 
+span:not([class]) {
+  font-size: 100%;
+}
+
 .melectron-demonstration {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -57,3 +57,22 @@
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
 }
+
+@media (max-width: 800px) {
+  .logo-demonstration .small {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+
+  .logo-demonstration div {
+    padding: 10px;
+  }
+
+  .logo-demonstration {
+    width: 100vw;
+    max-width: 1920px;
+    align-self: center;
+    border-radius: 0;
+  }
+}

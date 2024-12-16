@@ -62,11 +62,13 @@ footer .copyright {
   -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
+
 footer .copyright:hover {
   opacity: 100%;
 }
 
 .logo-footer {
+  position: relative;
   height: 48px;
   aspect-ratio: 3.35;
   -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
@@ -75,16 +77,43 @@ footer .copyright:hover {
   opacity: 60%;
 }
 
-footer .logo-footer {
-  background: url(../../img/logo/logo-footer.svg) no-repeat center center /
-    contain;
+.logo-footer:hover {
+  opacity: 100%;
 }
 
-footer .logo-footer:hover {
-  opacity: 100%;
-  background: url(../../img/logo/logo-footer-color.svg) no-repeat center center /
-    contain;
+.logo-footer:before,
+.logo-footer:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
+
+.logo-footer:before {
+  background-image: url(../../img/logo/logo-footer.svg);
+  opacity: 1;
+}
+
+.logo-footer:after {
+  background-image: url(../../img/logo/logo-footer-color.svg);
+  opacity: 0;
+}
+
+.logo-footer:hover:before {
+  opacity: 0;
+}
+
+.logo-footer:hover:after {
+  opacity: 1;
+}
+
 
 @media (max-width: 800px) {
   footer .hlink {

@@ -1,0 +1,112 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/about/$
+RewriteRule ^(.*)$ /kfbrand/ [R=301]
+RewriteCond %{REQUEST_URI} ^/about$
+RewriteRule ^(.*)$ /kfbrand/ [R=301]
+
+RewriteCond %{REQUEST_URI} ^/download/$
+RewriteRule ^(.*)$ /kfbrand/ [R=301]
+RewriteCond %{REQUEST_URI} ^/download$
+RewriteRule ^(.*)$ /kfbrand/ [R=301]
+
+ErrorDocument 404 http://kfprod.ru/service-pages/404/
+
+
+# personal-projects
+RewriteCond %{REQUEST_URI} ^/1523tv/$
+RewriteRule ^(.*)$ /personal-projects/1523tv/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/1523tv$
+RewriteRule ^(.*)$ /personal-projects/1523tv/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/birthday/$
+RewriteRule ^(.*)$ /personal-projects/birthday/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/birthday$
+RewriteRule ^(.*)$ /personal-projects/birthday/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/desktops/$
+RewriteRule ^(.*)$ /personal-projects/desktops/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/desktops$
+RewriteRule ^(.*)$ /personal-projects/desktops/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/kfbrand/$
+RewriteRule ^(.*)$ /personal-projects/kfbrand/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/kfbrand$
+RewriteRule ^(.*)$ /personal-projects/kfbrand/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/minecraft-posters/$
+RewriteRule ^(.*)$ /personal-projects/minecraft-posters/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/minecraft-posters$
+RewriteRule ^(.*)$ /personal-projects/minecraft-posters/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/posters/$
+RewriteRule ^(.*)$ /personal-projects/posters/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/posters$
+RewriteRule ^(.*)$ /personal-projects/posters/ [L,R=301]
+
+
+# projects
+RewriteCond %{REQUEST_URI} ^/aesthete/$
+RewriteRule ^(.*)$ /projects/aesthete/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/aesthete$
+RewriteRule ^(.*)$ /projects/aesthete/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/default/$
+RewriteRule ^(.*)$ /projects/default/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/default$
+RewriteRule ^(.*)$ /projects/default/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/melectron/$
+RewriteRule ^(.*)$ /projects/melectron/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/melectron$
+RewriteRule ^(.*)$ /projects/melectron/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/morfin/$
+RewriteRule ^(.*)$ /projects/morfin/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/morfin$
+RewriteRule ^(.*)$ /projects/morfin/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/morfinizm/$
+RewriteRule ^(.*)$ /projects/morfinizm/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/morfinizm$
+RewriteRule ^(.*)$ /projects/morfinizm/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/morfinizm-lyrics/$
+RewriteRule ^(.*)$ /projects/morfinizm-lyrics/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/morfinizm-lyrics$
+RewriteRule ^(.*)$ /projects/morfinizm-lyrics/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/nuqun/$
+RewriteRule ^(.*)$ /projects/nuqun/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/nuqun$
+RewriteRule ^(.*)$ /projects/nuqun/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/stickers/$
+RewriteRule ^(.*)$ /projects/stickers/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/stickers$
+RewriteRule ^(.*)$ /projects/stickers/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/wild-mathing/$
+RewriteRule ^(.*)$ /projects/wild-mathing/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/wild-mathing$
+RewriteRule ^(.*)$ /projects/wild-mathing/ [L,R=301]
+
+
+# service-pages
+RewriteCond %{REQUEST_URI} ^/404/$
+RewriteRule ^(.*)$ /service-pages/404/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/404$
+RewriteRule ^(.*)$ /service-pages/404/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/all-pages/$
+RewriteRule ^(.*)$ /service-pages/all-pages/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/all-pages$
+RewriteRule ^(.*)$ /service-pages/all-pages/ [L,R=301]
+
+
+# other-pages
+RewriteCond %{REQUEST_URI} ^/history/$
+RewriteRule ^(.*)$ /other-pages/history/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/history$
+RewriteRule ^(.*)$ /other-pages/history/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/personal/$
+RewriteRule ^(.*)$ /other-pages/personal/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/personal$
+RewriteRule ^(.*)$ /other-pages/personal/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/resume/$
+RewriteRule ^(.*)$ /other-pages/resume/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/resume$
+RewriteRule ^(.*)$ /other-pages/resume/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/showreel/$
+RewriteRule ^(.*)$ /other-pages/showreel/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/showreel$
+RewriteRule ^(.*)$ /other-pages/showreel/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/useful/$
+RewriteRule ^(.*)$ /other-pages/useful/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/useful$
+RewriteRule ^(.*)$ /other-pages/useful/ [L,R=301]

@@ -47,6 +47,11 @@ header .button:empty {
   opacity: 60%;
 }
 
+h1 {
+  margin: 0;
+  width: auto;
+}
+
 .project-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,28 +93,6 @@ header .button:empty {
   header .button-container {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-  }
-
-  .logo-demonstration .small {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-
-  .logo-demonstration div {
-    padding: 10px;
-  }
-
-  .font-demonstration-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .poster-demonstration-container {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
   }
 
   .two-columns {

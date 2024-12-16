@@ -83,3 +83,12 @@
 .font-demonstration-container + .font-demonstration-container {
   margin-top: -20px;
 }
+
+@media (max-width: 800px) {
+  .font-demonstration-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}

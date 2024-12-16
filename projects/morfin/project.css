@@ -6,6 +6,10 @@ header {
   row-gap: 20px;
 }
 
+span:not([class]) {
+  font-size: 100%;
+}
+
 h1 {
   font-family: Morfin, Arial, sans-serif;
   color: #dd4625;

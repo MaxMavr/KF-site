@@ -1,7 +1,7 @@
 video.video-demonstration,
 img.img-demonstration {
   pointer-events: none;
-  width: calc(100vw - 4px);
+  width: 100vw;
   max-width: 1920px;
   position: relative;
   /* -webkit-transform: translate(-50%, 0);
