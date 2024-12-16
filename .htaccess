@@ -1,6 +1,12 @@
-# 16.12.2024 16:06
+# 16.12.2024 20:09
+
+Options +Includes
+
+AddType text/html .html
+AddOutputFilter INCLUDES .html
 
 RewriteEngine On
+
 RewriteCond %{REQUEST_URI} ^/about/$
 RewriteRule ^(.*)$ /kfbrand/ [R=301]
 RewriteCond %{REQUEST_URI} ^/about$
